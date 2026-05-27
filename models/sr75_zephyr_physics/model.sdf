@@ -2,18 +2,24 @@
 <sdf version="1.9">
   <model name="zephyr">
     <link name="wing">
-      <inertial>
-        <pose>0 -0.12 0 0 0 0</pose>
-        <mass>1.5</mass>
-        <inertia>
-          <ixx>0.083137104</ixx>
-          <ixy>0</ixy>
-          <iyy>0.387382402</iyy>
-          <ixz>0</ixz>
-          <iyz>0</iyz>
-          <izz>0.469845106</izz>
-        </inertia>
-      </inertial>
+<inertial>
+  <!-- SR-75 inertial model, Phase 2 -->
+  <!-- Dimensions used: wingspan b=1.6 m, chord c=0.625 m, approx length=1.53 m, height=0.65 m -->
+  <!-- CGOffset from SR-75 JSON: [-0.15, 0.0, -0.05] -->
+  <pose>-0.15 0 -0.05 0 0 0</pose>
+
+  <mass>82.5</mass>
+
+  <inertia>
+    <!-- Approx box inertia: mass=82.5 kg, X=1.53 m, Y=1.6 m, Z=0.65 m -->
+    <ixx>20.5</ixx>
+    <ixy>0</ixy>
+    <ixz>0</ixz>
+    <iyy>19.0</iyy>
+    <iyz>0</iyz>
+    <izz>33.7</izz>
+  </inertia>
+</inertial>
 <visual name="sr75_skyreaper_visual">
   <!-- STL exported in millimeters; Gazebo uses meters -->
   <!-- CAD center after mm to m: X=0.765, Y=0.936, Z=0.367 -->
@@ -42,22 +48,23 @@
     </box>
   </geometry>
 </collision>
-      <collision name="right_rudder_collision">
+      <!-- <collision name="right_rudder_collision">
         <pose>-0.76435 0.33918 0.002 -0.03 0 0</pose>
         <geometry>
           <box>
             <size>.005 0.12993 .12688</size>
           </box>
         </geometry>
-      </collision>
-      <collision name="left_rudder_collision">
+      </collision> -->
+      
+      <!-- <collision name="left_rudder_collision">
         <pose>0.76435 0.33918 0.002 -0.03 0 0</pose>
         <geometry>
           <box>
             <size>.005 0.12993 .12688</size>
           </box>
         </geometry>
-      </collision>
+      </collision> -->
 
       <!-- save center of pressure locations for debugging -->
       <!-- <visual name="cp_wing">
