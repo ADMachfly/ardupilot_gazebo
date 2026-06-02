@@ -16,6 +16,12 @@
 */
 #include "ArduPilotPlugin.hh"
 
+#include <gz/sim/Link.hh>
+#include <gz/sim/Util.hh>
+#include <gz/math/Vector3.hh>
+#include <gz/sim/components/Link.hh>
+#include <gz/sim/components/Name.hh>
+
 #include <rapidjson/stringbuffer.h>
 #include <rapidjson/writer.h>
 
@@ -125,6 +131,21 @@ class Control
   /// \brief The joint being controlled
   public: gz::sim::Entity joint;
 
+  /// \brief The link being controlled for direct link force
+  public: std::string linkName;
+
+  /// \brief Link entity for direct link force
+  public: gz::sim::Entity link = gz::sim::kNullEntity;
+
+  /// \brief Direction of applied force in link frame
+  public: gz::math::Vector3d forceDirection{0, -1, 0};
+
+  /// \brief Offset point where force is applied in link frame
+  public: gz::math::Vector3d forceOffset{0, 0, 0};
+
+  /// \brief Maximum force in Newtons for LINK_FORCE control
+  public: double maxForce = 800.0;
+
   /// \brief A multiplier to scale the raw input command
   public: double multiplier = 1.0;
 
@@ -161,6 +182,41 @@ class Control
 double Control::kDefaultRotorVelocitySlowdownSim = 10.0;
 double Control::kDefaultFrequencyCutoff = 5.0;
 double Control::kDefaultSamplingRate = 0.2;
+
+/////////////////////////////////////////////////
+// Helper: find a link entity by name.
+// Accepts both "zephyr::wing" and "wing".
+static gz::sim::Entity FindLinkByName(
+    gz::sim::EntityComponentManager &_ecm,
+    const std::string &_linkName)
+{
+  std::string shortName = _linkName;
+
+  const auto pos = shortName.rfind("::");
+  if (pos != std::string::npos)
+  {
+    shortName = shortName.substr(pos + 2);
+  }
+
+  gz::sim::Entity result = gz::sim::kNullEntity;
+
+  _ecm.Each<gz::sim::components::Name,
+            gz::sim::components::Link>(
+      [&](const gz::sim::Entity &_entity,
+          const gz::sim::components::Name *_name,
+          const gz::sim::components::Link *) -> bool
+      {
+        if (_name->Data() == _linkName || _name->Data() == shortName)
+        {
+          result = _entity;
+          return false;
+        }
+
+        return true;
+      });
+
+  return result;
+}
 
 /////////////////////////////////////////////////
 // Wrapper class to store callback functions
@@ -413,6 +469,11 @@ void gz::sim::systems::ArduPilotPlugin::Reset(const UpdateInfo &_info,
   // update velocity PID for controls and apply force to joint
   for (size_t i = 0; i < this->dataPtr->controls.size(); ++i)
   {
+  // LINK_FORCE does not use a joint, so skip joint component setup
+    if (this->dataPtr->controls[i].type == "LINK_FORCE")
+    {
+      continue;
+    }
     gz::sim::components::JointForceCmd* jfcComp = nullptr;
     gz::sim::components::JointVelocityCmd* jvcComp = nullptr;
     if (this->dataPtr->controls[i].useForce ||
@@ -585,15 +646,17 @@ void gz::sim::systems::ArduPilotPlugin::LoadControlChannels(
       control.type = "VELOCITY";
     }
 
-    if (control.type != "VELOCITY" &&
-        control.type != "POSITION" &&
-        control.type != "EFFORT" &&
-        control.type != "COMMAND")
+  if (control.type != "VELOCITY" &&
+     control.type != "POSITION" &&
+     control.type != "EFFORT" &&
+     control.type != "COMMAND" &&
+     control.type != "LINK_FORCE")
+
     {
       gzwarn << "[" << this->dataPtr->modelName << "] "
              << "Control type [" << control.type
              << "] not recognized, must be one of"
-             << "VELOCITY, POSITION, EFFORT, COMMAND."
+             << "VELOCITY, POSITION, EFFORT, COMMAND, LINK_FORCE."
              << " default to VELOCITY.\n";
       control.type = "VELOCITY";
     }
@@ -603,27 +666,64 @@ void gz::sim::systems::ArduPilotPlugin::LoadControlChannels(
       control.useForce = controlSDF->Get<bool>("useForce");
     }
 
-    if (controlSDF->HasElement("jointName"))
-    {
-      control.jointName = controlSDF->Get<std::string>("jointName");
-    }
-    else
-    {
-      gzerr << "[" << this->dataPtr->modelName << "] "
-            << "Please specify a jointName,"
-            << " where the control channel is attached.\n";
-    }
+if (control.type == "LINK_FORCE")
+{
+  if (controlSDF->HasElement("linkName"))
+  {
+    control.linkName = controlSDF->Get<std::string>("linkName");
+  }
+  else
+  {
+    gzerr << "[" << this->dataPtr->modelName << "] "
+          << "LINK_FORCE requires <linkName>.\n";
+    return;
+  }
 
-    // Get the pointer to the joint.
-    control.joint = JointByName(_ecm,
-        this->dataPtr->model.Entity(), control.jointName);
-    if (control.joint == gz::sim::kNullEntity)
-    {
-      gzerr << "[" << this->dataPtr->modelName << "] "
-            << "Couldn't find specified joint ["
-            << control.jointName << "]. This plugin will not run.\n";
-      return;
-    }
+  control.link = FindLinkByName(_ecm, control.linkName);
+
+  if (control.link == gz::sim::kNullEntity)
+  {
+    gzerr << "[" << this->dataPtr->modelName << "] "
+          << "Couldn't find specified link ["
+          << control.linkName << "]. This plugin will not run.\n";
+    return;
+  }
+
+  control.forceDirection =
+      controlSDF->Get("forceDirection",
+      gz::math::Vector3d(0, -1, 0)).first;
+
+  control.forceOffset =
+      controlSDF->Get("forceOffset",
+      gz::math::Vector3d(0, 0, 0)).first;
+
+  control.maxForce =
+      controlSDF->Get("maxForce", 800.0).first;
+}
+else
+{
+  if (controlSDF->HasElement("jointName"))
+  {
+    control.jointName = controlSDF->Get<std::string>("jointName");
+  }
+  else
+  {
+    gzerr << "[" << this->dataPtr->modelName << "] "
+          << "Please specify a jointName,"
+          << " where the control channel is attached.\n";
+  }
+
+  // Get the pointer to the joint.
+  control.joint = JointByName(_ecm,
+      this->dataPtr->model.Entity(), control.jointName);
+  if (control.joint == gz::sim::kNullEntity)
+  {
+    gzerr << "[" << this->dataPtr->modelName << "] "
+          << "Couldn't find specified joint ["
+          << control.jointName << "]. This plugin will not run.\n";
+    return;
+  }
+}
 
     // set up publisher if relaying the command
     if (control.type == "COMMAND")
@@ -711,7 +811,7 @@ void gz::sim::systems::ArduPilotPlugin::LoadControlChannels(
             << control.servo_min << "\n";
     }
 
-    if (controlSDF->HasElement("servo_max"))
+       if (controlSDF->HasElement("servo_max"))
     {
       control.servo_max = controlSDF->Get<double>("servo_max");
     }
@@ -722,9 +822,18 @@ void gz::sim::systems::ArduPilotPlugin::LoadControlChannels(
             << "]: <servo_max> not specified, default to "
             << control.servo_max << "\n";
     }
+    // LINK_FORCE does not need rotor slowdown or PID joint setup.
+    // Store it and move to the next control block.
+    if (control.type == "LINK_FORCE")
+    {
+      this->dataPtr->controls.push_back(control);
+      controlSDF = controlSDF->GetNextElement("control");
+      continue;
+    }
 
     control.rotorVelocitySlowdownSim =
-        controlSDF->Get("rotorVelocitySlowdownSim", 1).first;
+        
+    controlSDF->Get("rotorVelocitySlowdownSim", 1).first;
 
     if (gz::math::equal(control.rotorVelocitySlowdownSim, 0.0))
     {
@@ -1322,6 +1431,55 @@ void gz::sim::systems::ArduPilotPlugin::ApplyMotorForces(
       continue;
     }
 
+  // SR-75 direct jet thrust control.
+  // Applies force directly to a link instead of driving a propeller joint.
+  if (this->dataPtr->controls[i].type == "LINK_FORCE")
+  {
+  const double throttle =
+      gz::math::clamp(this->dataPtr->controls[i].cmd, 0.0, 1.0);
+
+  const double thrustN =
+      throttle * this->dataPtr->controls[i].maxForce;
+
+      gzmsg << "[SR75 LINK_FORCE] pwm-cmd/throttle="
+      << this->dataPtr->controls[i].cmd
+      << " thrustN=" << thrustN
+      << " link=" << this->dataPtr->controls[i].linkName
+      << "\n";
+      
+  gz::math::Vector3d dir =
+      this->dataPtr->controls[i].forceDirection;
+
+  const double len = dir.Length();
+  if (len <= 1e-6)
+  {
+    dir = gz::math::Vector3d(0, -1, 0);
+  }
+  else
+  {
+    dir = dir / len;
+  }
+
+  gz::sim::Link link(this->dataPtr->controls[i].link);
+
+  auto poseOpt = link.WorldPose(_ecm);
+  if (!poseOpt)
+  {
+    continue;
+  }
+
+  // forceDirection is defined in link/body frame.
+  // Convert it to world frame before applying.
+  const gz::math::Vector3d worldForce =
+      poseOpt->Rot().RotateVector(dir * thrustN);
+
+  link.AddWorldForce(
+      _ecm,
+      worldForce,
+      this->dataPtr->controls[i].forceOffset);
+
+  continue;
+}
     gz::sim::components::JointForceCmd* jfcComp = nullptr;
     gz::sim::components::JointVelocityCmd* jvcComp = nullptr;
     if (this->dataPtr->controls[i].useForce ||

@@ -348,5 +348,43 @@
         </dynamics>
       </axis>
     </joint>
+
+<!-- SR-75 Left Engine (virtual jet thrust point) -->
+<link name="left_engine_link">
+  <pose>-0.55 -0.25 0 0 0 0</pose>
+  <inertial>
+    <mass>0.001</mass>
+    <inertia>
+      <ixx>0.000001</ixx><ixy>0</ixy><ixz>0</ixz>
+      <iyy>0.000001</iyy><iyz>0</iyz>
+      <izz>0.000001</izz>
+    </inertia>
+  </inertial>
+</link>
+
+<!-- SR-75 Right Engine (virtual jet thrust point) -->
+<link name="right_engine_link">
+  <pose>-0.55 0.25 0 0 0 0</pose>
+  <inertial>
+    <mass>0.001</mass>
+    <inertia>
+      <ixx>0.000001</ixx><ixy>0</ixy><ixz>0</ixz>
+      <iyy>0.000001</iyy><iyz>0</iyz>
+      <izz>0.000001</izz>
+    </inertia>
+  </inertial>
+</link>
+
+<!-- Fix engine links rigidly to main wing body -->
+<joint name="left_engine_joint" type="fixed">
+  <parent>wing</parent>
+  <child>left_engine_link</child>
+</joint>
+
+<joint name="right_engine_joint" type="fixed">
+  <parent>wing</parent>
+  <child>right_engine_link</child>
+</joint>
+
   </model>
 </sdf>
