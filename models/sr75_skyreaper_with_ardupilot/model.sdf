@@ -39,25 +39,25 @@
       <link_name>zephyr::wing</link_name>
     </plugin>
 
-    <!-- left_wing -->
+    <!-- left_wing: symmetric to right_wing using SR-75 MATLAB aero params -->
     <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
-      <a0>0.15</a0>
-      <cla>6.8</cla>
-      <cda>0.06417112299</cda>
-      <cma>0.0</cma>
-      <alpha_stall>0.6391428111</alpha_stall>
-      <cla_stall>-3.85</cla_stall>
-      <cda_stall>-0.9233984055</cda_stall>
-      <cma_stall>0.0</cma_stall>
-      <cp>0.7 0.20 0</cp>
-      <area>0.10</area>
-      <air_density>1.2041</air_density>
+      <a0>-0.0096</a0>
+      <cla>2.308</cla>
+      <cda>0.03</cda>
+      <cma>-0.5</cma>
+      <alpha_stall>0.20</alpha_stall>
+      <cla_stall>-1.5</cla_stall>
+      <cda_stall>1.0</cda_stall>
+      <cma_stall>-0.5</cma_stall>
+      <cp>0.55 0.20 0</cp>
+      <area>0.18</area>
+      <air_density>1.225</air_density>
       <forward>0 -1 0</forward>
       <upward>0 0 1</upward>
       <link_name>zephyr::wing</link_name>
       <control_joint_name>zephyr::flap_left_joint</control_joint_name>
-      <control_joint_rad_to_cl>-5.0</control_joint_rad_to_cl>
+      <control_joint_rad_to_cl>0.45</control_joint_rad_to_cl>
     </plugin>
     <!-- right_wing -->
     <!-- SR-75 right elevon aerodynamic approximation -->
@@ -85,7 +85,7 @@
       <control_joint_name>zephyr::flap_right_joint</control_joint_name>
 
       <!-- MATLAB CLde = 0.45. Use negative sign to match current Zephyr convention. -->
-      <control_joint_rad_to_cl>-0.45</control_joint_rad_to_cl>
+      <control_joint_rad_to_cl>0.45</control_joint_rad_to_cl>
     </plugin>
 
     <!-- left_rudder -->
@@ -237,7 +237,7 @@
       <!-- Main SR-75 body link inside included zephyr physics model -->
         <linkName>zephyr::wing</linkName>
 
-      <!-- Current forward convention -->
+      <!-- Body-frame forward in Zephyr/SR-75 is -Y; thrust must match -->
         <forceDirection>0 -1 0</forceDirection>
 
       <!-- Apply force near engine area; set 0 0 0 first if unstable -->

@@ -52,8 +52,11 @@
 <visual name="sr75_skyreaper_visual">
   <!-- STL exported in millimeters; Gazebo uses meters -->
   <!-- CAD center after mm to m: X=0.765, Y=0.936, Z=0.367 -->
-
-  <pose>-0.765 -0.936 -0.367 0 0 0</pose>
+  <!-- Rotated 180 deg around Z so STL nose (originally +Y in STL coords)
+       faces body -Y (aerodynamic forward).  Offset recalculated so CAD
+       center still lands on the link origin:
+         T_new = -R_z(pi) * CAD_center = (0.765, 0.936, -0.367) -->
+  <pose>0.765 0.936 -0.367 0 0 3.14159</pose>
 
   <geometry>
     <mesh>
@@ -68,14 +71,106 @@
     <specular>0.1 0.1 0.1 1</specular>
   </material>
 </visual>
+
 <collision name="sr75_body_collision">
   <!-- Simple SR-75 collision box: length, wingspan, height -->
-  <pose>0 0 0 0 0 0</pose>
+  <pose>0 0 0.05 0 0 0</pose>
   <geometry>
     <box>
-      <size>1.530 1.873 0.650</size>
+      <size>1.50 0.35 0.35</size>
     </box>
   </geometry>
+  <surface>
+    <friction>
+      <ode>
+        <mu>0.4</mu>
+        <mu2>0.4</mu2>
+      </ode>
+    </friction>
+    <contact>
+      <ode>
+        <kp>100000</kp>
+        <kd>10</kd>
+        <max_vel>0.5</max_vel>
+        <min_depth>0.001</min_depth>
+      </ode>
+    </contact>
+  </surface>
+</collision>
+
+<collision name="nose_gear_collision">
+  <pose>0.55 0 -0.28 0 0 0</pose>
+  <geometry>
+    <sphere>
+      <radius>0.045</radius>
+    </sphere>
+  </geometry>
+  <surface>
+    <friction>
+      <ode>
+        <mu>0.05</mu>
+        <mu2>0.05</mu2>
+      </ode>
+    </friction>
+    <contact>
+      <ode>
+        <kp>50000</kp>
+        <kd>5</kd>
+        <max_vel>0.2</max_vel>
+        <min_depth>0.001</min_depth>
+      </ode>
+    </contact>
+  </surface>
+</collision>
+
+<collision name="left_main_gear_collision">
+  <pose>-0.35 -0.35 -0.28 0 0 0</pose>
+  <geometry>
+    <sphere>
+      <radius>0.055</radius>
+    </sphere>
+  </geometry>
+  <surface>
+    <friction>
+      <ode>
+        <mu>0.05</mu>
+        <mu2>0.05</mu2>
+      </ode>
+    </friction>
+    <contact>
+      <ode>
+        <kp>50000</kp>
+        <kd>5</kd>
+        <max_vel>0.2</max_vel>
+        <min_depth>0.001</min_depth>
+      </ode>
+    </contact>
+  </surface>
+</collision>
+
+<collision name="right_main_gear_collision">
+  <pose>-0.35 0.35 -0.28 0 0 0</pose>
+  <geometry>
+    <sphere>
+      <radius>0.055</radius>
+    </sphere>
+  </geometry>
+  <surface>
+    <friction>
+      <ode>
+        <mu>0.05</mu>
+        <mu2>0.05</mu2>
+      </ode>
+    </friction>
+    <contact>
+      <ode>
+        <kp>50000</kp>
+        <kd>5</kd>
+        <max_vel>0.2</max_vel>
+        <min_depth>0.001</min_depth>
+      </ode>
+    </contact>
+  </surface>
 </collision>
 
 <!-- Add camera here, before closing wing link -->

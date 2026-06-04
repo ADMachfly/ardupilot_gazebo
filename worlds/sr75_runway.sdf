@@ -112,8 +112,10 @@
 
     <include>
       <uri>model://sr75_skyreaper_with_ardupilot</uri>
-      <!-- Half height = 0.325 m, so model sits on ground round to 0.35 -->
-      <pose degrees="true">0 0 0.35 0 0 0</pose>
+      <!-- Half height = 0.325 m, so model sits on ground at 0.35 m.
+           Yaw=180 so body -Y (aerodynamic forward) faces world +Y (North),
+           matching the runway orientation at (-29, 545). -->
+      <pose degrees="true">0 0 0.35 0 0 180</pose>
     </include>
 
   </world>
