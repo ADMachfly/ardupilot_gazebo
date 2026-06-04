@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <model name="sr75_skyreaper">
+    <static>false</static>
+
+    <!-- Model pose is controlled from sr75_runway.sdf -->
+    <link name="base_link">
+
+      <!-- Approx SR-75/Skyreaper mass and box inertia for first Gazebo test -->
+      <inertial>
+        <mass>82.5</mass>
+        <inertia>
+          <!-- Approx box inertia using X=1.530 m, Y=1.873 m, Z=0.650 m -->
+          <ixx>27.0</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>19.0</iyy>
+          <iyz>0</iyz>
+          <izz>40.2</izz>
+        </inertia>
+      </inertial>
+
+      <!--
+        STL was exported in millimeters.
+        Gazebo reads mesh units as meters, so scale must be 0.001.
+        Bounding box center after conversion:
+        X = 0.765 m, Y = 0.936 m, Z = 0.367 m.
+        Negative pose moves mesh center near base_link origin.
+      -->
+      <visual name="skyreaper_visual">
+        <pose>-0.765 -0.936 -0.367 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://sr75_skyreaper/meshes/Skyreaper_Base_model.STL</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.35 0.35 0.35 1</ambient>
+          <diffuse>0.35 0.35 0.35 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+
+      <!-- Simple collision box matching real UAV bounding dimensions -->
+      <collision name="skyreaper_collision">
+        <geometry>
+          <box>
+            <!-- X length, Y wingspan, Z height in meters -->
+            <size>1.530 1.873 0.650</size>
+          </box>
+        </geometry>
+      </collision>
+
+    </link>
+  </model>
+</sdf>

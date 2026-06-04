@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target ArduPilotPlugin[0m
+[ 60%] Built target CameraZoomPlugin
+[ 60%] Built target ParachutePlugin
+[ 60%] Built target GstCameraPlugin
+[ 70%] [32mBuilding CXX object CMakeFiles/ArduPilotPlugin.dir/src/ArduPilotPlugin.cc.o[0m

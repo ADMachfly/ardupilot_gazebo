@@ -1,0 +1,675 @@
+[0.000000] (-) TimerEvent: {}
+[0.000606] (ardupilot_gazebo) JobQueued: {'identifier': 'ardupilot_gazebo', 'dependencies': OrderedDict()}
+[0.001091] (ardupilot_gazebo) JobStarted: {'identifier': 'ardupilot_gazebo'}
+[0.048088] (ardupilot_gazebo) JobProgress: {'identifier': 'ardupilot_gazebo', 'progress': 'cmake'}
+[0.087470] (-) TimerEvent: {}
+[0.188305] (-) TimerEvent: {}
+[0.195282] (ardupilot_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/mnt/f/ardupilot_dev/ardupilot_gazebo', '-DCMAKE_INSTALL_PREFIX=/mnt/f/ardupilot_dev/ardupilot_gazebo/install'], 'cwd': '/mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/mnt/f/ardupilot_dev/ardupilot_gazebo/build:/mnt/f/ardupilot_dev/ardupilot_gazebo/build:/mnt/f/ardupilot_dev/ardupilot_gazebo/build:'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HISTFILESIZE', '10000'), ('HISTTIMEFORMAT', '%d/%m/%y %T'), ('GZ_SIM_RESOURCE_PATH', '/mnt/f/ardupilot_dev/ardupilot_gazebo/models:/mnt/f/ardupilot_dev/ardupilot_gazebo/worlds:/mnt/f/ardupilot_dev/ardupilot_gazebo/models:/mnt/f/ardupilot_dev/ardupilot_gazebo/worlds:/mnt/f/ardupilot_dev/ardupilot_gazebo/models:/mnt/f/ardupilot_dev/ardupilot_gazebo/worlds:'), ('USER', 'missi'), ('GIT_ASKPASS', '/home/missi/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('HOME', '/home/missi'), ('OLDPWD', '/mnt/f/ardupilot_dev/ardupilot_gazebo'), ('TERM_PROGRAM_VERSION', '1.122.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-9b9ff692-c0c5-4130-bf6f-a993f4131d69.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/missi/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/missi/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'missi'), ('NAME', 'BlindBird'), ('WSL_INTEROP', '/run/WSL/310_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/home/missi/.local/bin/colcon'), ('CLAUDE_CODE_SSE_PORT', '35344'), ('TERM', 'xterm-256color'), ('PATH', '/home/missi/.local/bin:/home/missi/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/bin/remote-cli:/mnt/f/ardupilot_dev/ardupilot/Tools/autotest:/mnt/f/ardupilot_dev/ardupilot/Tools/autotest:/usr/lib/ccache:/home/missi/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/missi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft MPI/Bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files/JKI/VI Package Manager/support:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files (x86)/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/Vagrant/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Users/missi/.local/bin:/mnt/c/Users/missi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/missi/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/missi/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/missi/.dotnet/tools:/mnt/c/Users/missi/AppData/Local/Python/bin:/snap/bin:/home/missi/.local/bin:/home/missi/.local/bin:/home/missi/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('HISTSIZE', '10000'), ('LANG', 'C.UTF-8'), ('PYTHONSTARTUP', '/home/missi/.vscode-server/data/User/workspaceStorage/4d6c9e28001e0d71ef70ed9bcf788da9/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f0c3dfffec.sock'), ('TERM_PROGRAM', 'vscode'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up')]), 'shell': False}
+[0.288491] (-) TimerEvent: {}
+[0.389378] (-) TimerEvent: {}
+[0.490044] (-) TimerEvent: {}
+[0.590886] (-) TimerEvent: {}
+[0.691460] (-) TimerEvent: {}
+[0.792366] (-) TimerEvent: {}
+[0.892992] (-) TimerEvent: {}
+[0.993688] (-) TimerEvent: {}
+[1.094240] (-) TimerEvent: {}
+[1.176866] (ardupilot_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.194390] (-) TimerEvent: {}
+[1.294826] (-) TimerEvent: {}
+[1.395346] (-) TimerEvent: {}
+[1.495730] (-) TimerEvent: {}
+[1.596223] (-) TimerEvent: {}
+[1.696713] (-) TimerEvent: {}
+[1.797144] (-) TimerEvent: {}
+[1.897589] (-) TimerEvent: {}
+[1.911293] (ardupilot_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.997665] (-) TimerEvent: {}
+[2.098096] (-) TimerEvent: {}
+[2.198692] (-) TimerEvent: {}
+[2.261418] (ardupilot_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.298792] (-) TimerEvent: {}
+[2.399379] (-) TimerEvent: {}
+[2.500223] (-) TimerEvent: {}
+[2.601263] (-) TimerEvent: {}
+[2.702068] (-) TimerEvent: {}
+[2.803815] (-) TimerEvent: {}
+[2.904308] (-) TimerEvent: {}
+[3.005325] (-) TimerEvent: {}
+[3.106068] (-) TimerEvent: {}
+[3.206531] (-) TimerEvent: {}
+[3.307647] (-) TimerEvent: {}
+[3.408794] (-) TimerEvent: {}
+[3.509262] (-) TimerEvent: {}
+[3.609696] (-) TimerEvent: {}
+[3.710218] (-) TimerEvent: {}
+[3.810554] (-) TimerEvent: {}
+[3.911069] (-) TimerEvent: {}
+[3.922592] (ardupilot_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.996107] (ardupilot_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[3.997878] (ardupilot_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.998616] (ardupilot_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.011169] (-) TimerEvent: {}
+[4.111870] (-) TimerEvent: {}
+[4.124728] (ardupilot_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.211976] (-) TimerEvent: {}
+[4.312591] (-) TimerEvent: {}
+[4.413418] (-) TimerEvent: {}
+[4.513965] (-) TimerEvent: {}
+[4.614400] (-) TimerEvent: {}
+[4.715165] (-) TimerEvent: {}
+[4.815878] (-) TimerEvent: {}
+[4.916498] (-) TimerEvent: {}
+[5.017181] (-) TimerEvent: {}
+[5.117804] (-) TimerEvent: {}
+[5.218147] (-) TimerEvent: {}
+[5.319115] (-) TimerEvent: {}
+[5.419614] (-) TimerEvent: {}
+[5.520133] (-) TimerEvent: {}
+[5.568666] (ardupilot_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[5.620247] (-) TimerEvent: {}
+[5.624046] (ardupilot_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[5.635710] (ardupilot_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[5.636772] (ardupilot_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.720425] (-) TimerEvent: {}
+[5.820962] (-) TimerEvent: {}
+[5.921441] (-) TimerEvent: {}
+[6.021958] (-) TimerEvent: {}
+[6.122498] (-) TimerEvent: {}
+[6.222893] (-) TimerEvent: {}
+[6.323251] (-) TimerEvent: {}
+[6.423600] (-) TimerEvent: {}
+[6.523985] (-) TimerEvent: {}
+[6.624365] (-) TimerEvent: {}
+[6.710489] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[6.711107] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[6.724418] (-) TimerEvent: {}
+[6.726804] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[6.727280] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[6.749991] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[6.818038] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[6.820543] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[6.824479] (-) TimerEvent: {}
+[6.827982] (ardupilot_gazebo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[6.835534] (ardupilot_gazebo) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[6.850573] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[6.851388] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 - found\n'}
+[6.851794] (ardupilot_gazebo) StdoutLine: {'line': b'\n'}
+[6.868669] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.3\n'}
+[6.869183] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-rendering8\n'}
+[6.884964] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[6.885746] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7\n'}
+[6.886201] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[6.886672] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-math7> component [eigen3]\n'}
+[6.901827] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7-eigen3 -- found version 7.6.0\n'}
+[6.902353] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7-eigen3\n'}
+[6.920219] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[6.920734] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[6.921250] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[6.921703] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[6.922105] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[6.924545] (-) TimerEvent: {}
+[6.924921] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [graphics]\n'}
+[6.944050] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-graphics -- found version 5.8.0\n'}
+[6.944530] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-graphics\n'}
+[6.945164] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[6.981949] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found GzAssimp: TRUE (found version "5.2.0") \n'}
+[6.982607] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[6.998173] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-events -- found version 5.8.0\n'}
+[6.998649] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-events\n'}
+[6.999076] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[6.999443] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [geospatial]\n'}
+[7.015784] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-geospatial -- found version 5.8.0\n'}
+[7.016262] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-geospatial\n'}
+[7.016674] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[7.017059] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[7.024598] (-) TimerEvent: {}
+[7.032490] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[7.033178] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[7.034312] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[7.034738] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[7.035138] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-utils2> component [cli]\n'}
+[7.050420] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2-cli -- found version 2.2.1\n'}
+[7.050952] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2-cli\n'}
+[7.051784] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [all]\n'}
+[7.066894] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for all libraries of gz-plugin2 -- found version 2.0.4\n'}
+[7.067321] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[7.082329] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2-loader -- found version 2.0.4\n'}
+[7.082845] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-loader\n'}
+[7.100396] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2-register -- found version 2.0.4\n'}
+[7.100816] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-register\n'}
+[7.102060] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[7.124672] (-) TimerEvent: {}
+[7.225274] (-) TimerEvent: {}
+[7.325665] (-) TimerEvent: {}
+[7.426150] (-) TimerEvent: {}
+[7.490763] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libGL.so  found components: OpenGL \n'}
+[7.493134] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering8 - found\n'}
+[7.493702] (ardupilot_gazebo) StdoutLine: {'line': b'\n'}
+[7.526251] (-) TimerEvent: {}
+[7.555225] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sim8 -- found version 8.11.0\n'}
+[7.557010] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sim8\n'}
+[7.589964] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.9.0\n'}
+[7.591701] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of sdformat14\n'}
+[7.594083] (ardupilot_gazebo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[7.599827] (ardupilot_gazebo) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[7.616283] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[7.618557] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[7.620268] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[7.626328] (-) TimerEvent: {}
+[7.688393] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.5.0\n'}
+[7.689522] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport13\n'}
+[7.726461] (-) TimerEvent: {}
+[7.826941] (-) TimerEvent: {}
+[7.927367] (-) TimerEvent: {}
+[8.027722] (-) TimerEvent: {}
+[8.128198] (-) TimerEvent: {}
+[8.228595] (-) TimerEvent: {}
+[8.329004] (-) TimerEvent: {}
+[8.429424] (-) TimerEvent: {}
+[8.529911] (-) TimerEvent: {}
+[8.630627] (-) TimerEvent: {}
+[8.731505] (-) TimerEvent: {}
+[8.832047] (-) TimerEvent: {}
+[8.932769] (-) TimerEvent: {}
+[9.033581] (-) TimerEvent: {}
+[9.134398] (-) TimerEvent: {}
+[9.234922] (-) TimerEvent: {}
+[9.335545] (-) TimerEvent: {}
+[9.436351] (-) TimerEvent: {}
+[9.537341] (-) TimerEvent: {}
+[9.638132] (-) TimerEvent: {}
+[9.739206] (-) TimerEvent: {}
+[9.839636] (-) TimerEvent: {}
+[9.940492] (-) TimerEvent: {}
+[10.041324] (-) TimerEvent: {}
+[10.142102] (-) TimerEvent: {}
+[10.242728] (-) TimerEvent: {}
+[10.343296] (-) TimerEvent: {}
+[10.443839] (-) TimerEvent: {}
+[10.544533] (-) TimerEvent: {}
+[10.645228] (-) TimerEvent: {}
+[10.746087] (-) TimerEvent: {}
+[10.846662] (-) TimerEvent: {}
+[10.947141] (-) TimerEvent: {}
+[11.047804] (-) TimerEvent: {}
+[11.149100] (-) TimerEvent: {}
+[11.249822] (-) TimerEvent: {}
+[11.350205] (-) TimerEvent: {}
+[11.450521] (-) TimerEvent: {}
+[11.550917] (-) TimerEvent: {}
+[11.651483] (-) TimerEvent: {}
+[11.752096] (-) TimerEvent: {}
+[11.853533] (-) TimerEvent: {}
+[11.953871] (-) TimerEvent: {}
+[12.012708] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[12.053960] (-) TimerEvent: {}
+[12.154274] (-) TimerEvent: {}
+[12.254922] (-) TimerEvent: {}
+[12.355777] (-) TimerEvent: {}
+[12.456171] (-) TimerEvent: {}
+[12.556625] (-) TimerEvent: {}
+[12.657164] (-) TimerEvent: {}
+[12.757751] (-) TimerEvent: {}
+[12.858375] (-) TimerEvent: {}
+[12.958995] (-) TimerEvent: {}
+[13.059574] (-) TimerEvent: {}
+[13.138167] (ardupilot_gazebo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[13.141324] (ardupilot_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[13.150470] (ardupilot_gazebo) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[13.159634] (-) TimerEvent: {}
+[13.166844] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[13.191725] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[13.207794] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[13.208306] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-msgs10\n'}
+[13.259742] (-) TimerEvent: {}
+[13.360070] (-) TimerEvent: {}
+[13.460613] (-) TimerEvent: {}
+[13.561112] (-) TimerEvent: {}
+[13.661641] (-) TimerEvent: {}
+[13.762155] (-) TimerEvent: {}
+[13.862580] (-) TimerEvent: {}
+[13.963098] (-) TimerEvent: {}
+[14.063587] (-) TimerEvent: {}
+[14.164140] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[14.165195] (-) TimerEvent: {}
+[14.165459] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[14.265325] (-) TimerEvent: {}
+[14.365803] (-) TimerEvent: {}
+[14.466325] (-) TimerEvent: {}
+[14.517119] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[14.523400] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-transport13> component [log]\n'}
+[14.566448] (-) TimerEvent: {}
+[14.593429] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13-log -- found version 13.5.0\n'}
+[14.595331] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport13-log\n'}
+[14.597302] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-transport13> component [parameters]\n'}
+[14.637539] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13-parameters -- found version 13.5.0\n'}
+[14.638339] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport13-parameters\n'}
+[14.639122] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[14.639756] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[14.641489] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[14.642369] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[14.642984] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[14.643492] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[14.645301] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [av]\n'}
+[14.666576] (-) TimerEvent: {}
+[14.673709] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-av -- found version 5.8.0\n'}
+[14.674589] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-av\n'}
+[14.678248] (ardupilot_gazebo) StdoutLine: {'line': b"-- Checking for module 'libswscale'\n"}
+[14.686444] (ardupilot_gazebo) StdoutLine: {'line': b'--   Found libswscale, version 5.9.100\n'}
+[14.704483] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found SWSCALE: TRUE  \n'}
+[14.707957] (ardupilot_gazebo) StdoutLine: {'line': b"-- Checking for module 'libavdevice >= 56.4.100'\n"}
+[14.715609] (ardupilot_gazebo) StdoutLine: {'line': b'--   Found libavdevice , version 58.13.100\n'}
+[14.734883] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found AVDEVICE: TRUE (Required is at least version "56.4.100") \n'}
+[14.738415] (ardupilot_gazebo) StdoutLine: {'line': b"-- Checking for module 'libavformat'\n"}
+[14.745088] (ardupilot_gazebo) StdoutLine: {'line': b'--   Found libavformat, version 58.76.100\n'}
+[14.762859] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found AVFORMAT: TRUE  \n'}
+[14.766223] (ardupilot_gazebo) StdoutLine: {'line': b"-- Checking for module 'libavcodec'\n"}
+[14.766745] (-) TimerEvent: {}
+[14.772920] (ardupilot_gazebo) StdoutLine: {'line': b'--   Found libavcodec, version 58.134.100\n'}
+[14.792131] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found AVCODEC: TRUE  \n'}
+[14.795590] (ardupilot_gazebo) StdoutLine: {'line': b"-- Checking for module 'libavutil'\n"}
+[14.801953] (ardupilot_gazebo) StdoutLine: {'line': b'--   Found libavutil, version 56.70.100\n'}
+[14.818779] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found AVUTIL: TRUE  \n'}
+[14.819651] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[14.820090] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [graphics]\n'}
+[14.820467] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [io]\n'}
+[14.837109] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-io -- found version 5.8.0\n'}
+[14.838143] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-io\n'}
+[14.838710] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [profiler]\n'}
+[14.858696] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-profiler -- found version 5.8.0\n'}
+[14.859251] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-profiler\n'}
+[14.866828] (-) TimerEvent: {}
+[14.880807] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-fuel_tools9 -- found version 9.1.1\n'}
+[14.881401] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-fuel_tools9\n'}
+[14.966952] (-) TimerEvent: {}
+[15.067523] (-) TimerEvent: {}
+[15.168248] (-) TimerEvent: {}
+[15.268679] (-) TimerEvent: {}
+[15.369142] (-) TimerEvent: {}
+[15.469563] (-) TimerEvent: {}
+[15.569998] (-) TimerEvent: {}
+[15.670405] (-) TimerEvent: {}
+[15.770952] (-) TimerEvent: {}
+[15.798869] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[15.838786] (ardupilot_gazebo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[15.846614] (ardupilot_gazebo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[15.867462] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[15.871037] (-) TimerEvent: {}
+[15.971542] (-) TimerEvent: {}
+[16.072024] (-) TimerEvent: {}
+[16.172735] (-) TimerEvent: {}
+[16.339221] (-) TimerEvent: {}
+[16.439847] (-) TimerEvent: {}
+[16.540369] (-) TimerEvent: {}
+[16.640964] (-) TimerEvent: {}
+[16.741556] (-) TimerEvent: {}
+[16.842135] (-) TimerEvent: {}
+[16.942685] (-) TimerEvent: {}
+[17.043287] (-) TimerEvent: {}
+[17.143810] (-) TimerEvent: {}
+[17.201708] (ardupilot_gazebo) StdoutLine: {'line': b"-- Checking for module 'yaml-0.1'\n"}
+[17.211729] (ardupilot_gazebo) StdoutLine: {'line': b'--   Found yaml-0.1, version 0.2.2\n'}
+[17.230563] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found YAML: TRUE  \n'}
+[17.234160] (ardupilot_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[17.241181] (ardupilot_gazebo) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[17.243885] (-) TimerEvent: {}
+[17.260232] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[17.261321] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[17.262207] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[17.262989] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[17.263773] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[17.264525] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[17.265398] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[17.266507] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-common5> component [testing]\n'}
+[17.295185] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5-testing -- found version 5.8.0\n'}
+[17.296216] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-testing\n'}
+[17.297102] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[17.297939] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[17.323601] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-gui8 -- found version 8.4.0\n'}
+[17.324477] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-gui8\n'}
+[17.343999] (-) TimerEvent: {}
+[17.444575] (-) TimerEvent: {}
+[17.545188] (-) TimerEvent: {}
+[17.645848] (-) TimerEvent: {}
+[17.746404] (-) TimerEvent: {}
+[17.846796] (-) TimerEvent: {}
+[17.947285] (-) TimerEvent: {}
+[18.047723] (-) TimerEvent: {}
+[18.148109] (-) TimerEvent: {}
+[18.248859] (-) TimerEvent: {}
+[18.350395] (-) TimerEvent: {}
+[18.450839] (-) TimerEvent: {}
+[18.516608] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[18.517732] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[18.518548] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[18.518973] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[18.519807] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.5.0\n'}
+[18.520641] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.3\n'}
+[18.521439] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[18.550956] (-) TimerEvent: {}
+[18.651484] (-) TimerEvent: {}
+[18.668946] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-physics7 -- found version 7.7.0\n'}
+[18.669739] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7\n'}
+[18.670303] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[18.671043] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[18.671770] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[18.672674] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[18.673400] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-physics7> component [heightmap]\n'}
+[18.691689] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-physics7-heightmap -- found version 7.7.0\n'}
+[18.692268] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7-heightmap\n'}
+[18.692987] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[18.693503] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-physics7> component [mesh]\n'}
+[18.711948] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-physics7-mesh -- found version 7.7.0\n'}
+[18.712503] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7-mesh\n'}
+[18.713245] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[18.713754] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-physics7> component [sdf]\n'}
+[18.731951] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-physics7-sdf -- found version 7.7.0\n'}
+[18.732454] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7-sdf\n'}
+[18.733426] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.9.0\n'}
+[18.751459] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[18.751921] (-) TimerEvent: {}
+[18.752060] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8\n'}
+[18.852023] (-) TimerEvent: {}
+[18.952817] (-) TimerEvent: {}
+[19.053273] (-) TimerEvent: {}
+[19.154054] (-) TimerEvent: {}
+[19.255824] (-) TimerEvent: {}
+[19.356300] (-) TimerEvent: {}
+[19.456694] (-) TimerEvent: {}
+[19.557184] (-) TimerEvent: {}
+[19.657841] (-) TimerEvent: {}
+[19.755670] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[19.756185] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[19.756546] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.5.0\n'}
+[19.756955] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.3\n'}
+[19.757481] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[19.757773] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.9.0\n'}
+[19.758051] (-) TimerEvent: {}
+[19.758858] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [air_pressure]\n'}
+[19.777573] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-air_pressure -- found version 8.2.2\n'}
+[19.778139] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-air_pressure\n'}
+[19.778645] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [air_speed]\n'}
+[19.794643] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-air_speed -- found version 8.2.2\n'}
+[19.795090] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-air_speed\n'}
+[19.795615] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [altimeter]\n'}
+[19.811662] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-altimeter -- found version 8.2.2\n'}
+[19.812160] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-altimeter\n'}
+[19.812598] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [imu]\n'}
+[19.828799] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-imu -- found version 8.2.2\n'}
+[19.829373] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-imu\n'}
+[19.829853] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [force_torque]\n'}
+[19.844539] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-force_torque -- found version 8.2.2\n'}
+[19.845001] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-force_torque\n'}
+[19.845463] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [logical_camera]\n'}
+[19.858123] (-) TimerEvent: {}
+[19.860645] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-logical_camera -- found version 8.2.2\n'}
+[19.861116] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-logical_camera\n'}
+[19.861628] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [magnetometer]\n'}
+[19.879367] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-magnetometer -- found version 8.2.2\n'}
+[19.880218] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-magnetometer\n'}
+[19.881627] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [navsat]\n'}
+[19.898044] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-navsat -- found version 8.2.2\n'}
+[19.898515] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-navsat\n'}
+[19.899000] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [dvl]\n'}
+[19.913679] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-dvl -- found version 8.2.2\n'}
+[19.914141] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-dvl\n'}
+[19.914528] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[19.914867] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8\n'}
+[19.958227] (-) TimerEvent: {}
+[20.058762] (-) TimerEvent: {}
+[20.159510] (-) TimerEvent: {}
+[20.259973] (-) TimerEvent: {}
+[20.360321] (-) TimerEvent: {}
+[20.460685] (-) TimerEvent: {}
+[20.556204] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[20.556729] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[20.557196] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.5.0\n'}
+[20.557603] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.3\n'}
+[20.558026] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[20.558394] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.9.0\n'}
+[20.558742] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [rendering]\n'}
+[20.560740] (-) TimerEvent: {}
+[20.576069] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-rendering -- found version 8.2.2\n'}
+[20.576686] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-rendering\n'}
+[20.577948] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [rendering]\n'}
+[20.578347] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [lidar]\n'}
+[20.593652] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-lidar -- found version 8.2.2\n'}
+[20.594152] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-lidar\n'}
+[20.594618] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[20.595001] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [gpu_lidar]\n'}
+[20.609959] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-gpu_lidar -- found version 8.2.2\n'}
+[20.610369] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-gpu_lidar\n'}
+[20.610739] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[20.611264] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [camera]\n'}
+[20.625951] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-camera -- found version 8.2.2\n'}
+[20.626447] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-camera\n'}
+[20.626919] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[20.627329] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [boundingbox_camera]\n'}
+[20.643581] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-boundingbox_camera -- found version 8.2.2\n'}
+[20.644127] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-boundingbox_camera\n'}
+[20.644638] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [segmentation_camera]\n'}
+[20.659553] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-segmentation_camera -- found version 8.2.2\n'}
+[20.660092] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-segmentation_camera\n'}
+[20.661204] (-) TimerEvent: {}
+[20.661428] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [depth_camera]\n'}
+[20.681246] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-depth_camera -- found version 8.2.2\n'}
+[20.681817] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-depth_camera\n'}
+[20.682185] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[20.682723] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [rgbd_camera]\n'}
+[20.697772] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-rgbd_camera -- found version 8.2.2\n'}
+[20.698235] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-rgbd_camera\n'}
+[20.698793] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[20.699222] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [thermal_camera]\n'}
+[20.713878] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-thermal_camera -- found version 8.2.2\n'}
+[20.714356] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-thermal_camera\n'}
+[20.714808] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[20.715206] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [wide_angle_camera]\n'}
+[20.730074] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sensors8-wide_angle_camera -- found version 8.2.2\n'}
+[20.731045] (ardupilot_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-wide_angle_camera\n'}
+[20.733649] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.3\n'}
+[20.734204] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[20.734732] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[20.761333] (-) TimerEvent: {}
+[20.861982] (-) TimerEvent: {}
+[20.962482] (-) TimerEvent: {}
+[21.062934] (-) TimerEvent: {}
+[21.163875] (-) TimerEvent: {}
+[21.264638] (-) TimerEvent: {}
+[21.365270] (-) TimerEvent: {}
+[21.465788] (-) TimerEvent: {}
+[21.566290] (-) TimerEvent: {}
+[21.666755] (-) TimerEvent: {}
+[21.767297] (-) TimerEvent: {}
+[21.867765] (-) TimerEvent: {}
+[21.968209] (-) TimerEvent: {}
+[22.046798] (ardupilot_gazebo) StdoutLine: {'line': b'-- Looking for gz-sim8 - found\n'}
+[22.047511] (ardupilot_gazebo) StdoutLine: {'line': b'\n'}
+[22.047977] (ardupilot_gazebo) StdoutLine: {'line': b'-- Compiling against Gazebo Harmonic\n'}
+[22.064968] (ardupilot_gazebo) StdoutLine: {'line': b'-- RapidJSON found. Headers: /usr/include\n'}
+[22.068285] (-) TimerEvent: {}
+[22.089581] (ardupilot_gazebo) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[22.090223] (ardupilot_gazebo) StdoutLine: {'line': b"-- Checking for modules 'gstreamer-1.0;gstreamer-app-1.0'\n"}
+[22.102621] (ardupilot_gazebo) StdoutLine: {'line': b'--   Found gstreamer-1.0, version 1.20.3\n'}
+[22.107744] (ardupilot_gazebo) StdoutLine: {'line': b'--   Found gstreamer-app-1.0, version 1.20.1\n'}
+[22.129142] (ardupilot_gazebo) StdoutLine: {'line': b'-- Configuring done\n'}
+[22.168480] (-) TimerEvent: {}
+[22.269349] (-) TimerEvent: {}
+[22.371019] (-) TimerEvent: {}
+[22.472027] (-) TimerEvent: {}
+[22.572653] (-) TimerEvent: {}
+[22.673348] (-) TimerEvent: {}
+[22.773926] (-) TimerEvent: {}
+[22.874458] (-) TimerEvent: {}
+[22.974932] (-) TimerEvent: {}
+[23.075763] (-) TimerEvent: {}
+[23.176432] (-) TimerEvent: {}
+[23.277482] (-) TimerEvent: {}
+[23.378645] (-) TimerEvent: {}
+[23.479659] (-) TimerEvent: {}
+[23.581119] (-) TimerEvent: {}
+[23.682361] (-) TimerEvent: {}
+[23.783332] (-) TimerEvent: {}
+[23.884212] (-) TimerEvent: {}
+[23.984880] (-) TimerEvent: {}
+[24.085577] (-) TimerEvent: {}
+[24.142042] (ardupilot_gazebo) StdoutLine: {'line': b'-- Generating done\n'}
+[24.185725] (-) TimerEvent: {}
+[24.286452] (-) TimerEvent: {}
+[24.387268] (-) TimerEvent: {}
+[24.487991] (-) TimerEvent: {}
+[24.588591] (-) TimerEvent: {}
+[24.689213] (-) TimerEvent: {}
+[24.789833] (-) TimerEvent: {}
+[24.890465] (-) TimerEvent: {}
+[24.991019] (-) TimerEvent: {}
+[25.001190] (ardupilot_gazebo) StdoutLine: {'line': b'-- Build files have been written to: /mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo\n'}
+[25.012884] (ardupilot_gazebo) CommandEnded: {'returncode': 0}
+[25.017250] (ardupilot_gazebo) JobProgress: {'identifier': 'ardupilot_gazebo', 'progress': 'build'}
+[25.022107] (ardupilot_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo', '--', '-j20', '-l20'], 'cwd': '/mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/mnt/f/ardupilot_dev/ardupilot_gazebo/build:/mnt/f/ardupilot_dev/ardupilot_gazebo/build:/mnt/f/ardupilot_dev/ardupilot_gazebo/build:'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HISTFILESIZE', '10000'), ('HISTTIMEFORMAT', '%d/%m/%y %T'), ('GZ_SIM_RESOURCE_PATH', '/mnt/f/ardupilot_dev/ardupilot_gazebo/models:/mnt/f/ardupilot_dev/ardupilot_gazebo/worlds:/mnt/f/ardupilot_dev/ardupilot_gazebo/models:/mnt/f/ardupilot_dev/ardupilot_gazebo/worlds:/mnt/f/ardupilot_dev/ardupilot_gazebo/models:/mnt/f/ardupilot_dev/ardupilot_gazebo/worlds:'), ('USER', 'missi'), ('GIT_ASKPASS', '/home/missi/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('HOME', '/home/missi'), ('OLDPWD', '/mnt/f/ardupilot_dev/ardupilot_gazebo'), ('TERM_PROGRAM_VERSION', '1.122.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-9b9ff692-c0c5-4130-bf6f-a993f4131d69.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/missi/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/missi/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'missi'), ('NAME', 'BlindBird'), ('WSL_INTEROP', '/run/WSL/310_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/home/missi/.local/bin/colcon'), ('CLAUDE_CODE_SSE_PORT', '35344'), ('TERM', 'xterm-256color'), ('PATH', '/home/missi/.local/bin:/home/missi/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/bin/remote-cli:/mnt/f/ardupilot_dev/ardupilot/Tools/autotest:/mnt/f/ardupilot_dev/ardupilot/Tools/autotest:/usr/lib/ccache:/home/missi/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/missi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft MPI/Bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files/JKI/VI Package Manager/support:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files (x86)/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/Vagrant/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Users/missi/.local/bin:/mnt/c/Users/missi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/missi/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/missi/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/missi/.dotnet/tools:/mnt/c/Users/missi/AppData/Local/Python/bin:/snap/bin:/home/missi/.local/bin:/home/missi/.local/bin:/home/missi/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('HISTSIZE', '10000'), ('LANG', 'C.UTF-8'), ('PYTHONSTARTUP', '/home/missi/.vscode-server/data/User/workspaceStorage/4d6c9e28001e0d71ef70ed9bcf788da9/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f0c3dfffec.sock'), ('TERM_PROGRAM', 'vscode'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up')]), 'shell': False}
+[25.091423] (-) TimerEvent: {}
+[25.192162] (-) TimerEvent: {}
+[25.293085] (-) TimerEvent: {}
+[25.297534] (ardupilot_gazebo) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/CameraZoomPlugin.dir/src/CameraZoomPlugin.cc.o\x1b[0m\n'}
+[25.300838] (ardupilot_gazebo) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/ParachutePlugin.dir/src/ParachutePlugin.cc.o\x1b[0m\n'}
+[25.393248] (-) TimerEvent: {}
+[25.473247] (ardupilot_gazebo) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/ArduPilotPlugin.dir/src/SocketUDP.cc.o\x1b[0m\n'}
+[25.474870] (ardupilot_gazebo) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/ArduPilotPlugin.dir/src/ArduPilotPlugin.cc.o\x1b[0m\n'}
+[25.476142] (ardupilot_gazebo) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/GstCameraPlugin.dir/src/GstCameraPlugin.cc.o\x1b[0m\n'}
+[25.493336] (-) TimerEvent: {}
+[25.546348] (ardupilot_gazebo) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/ArduPilotPlugin.dir/src/Util.cc.o\x1b[0m\n'}
+[25.593513] (-) TimerEvent: {}
+[25.694047] (-) TimerEvent: {}
+[25.794469] (-) TimerEvent: {}
+[25.894855] (-) TimerEvent: {}
+[25.995456] (-) TimerEvent: {}
+[26.096198] (-) TimerEvent: {}
+[26.196856] (-) TimerEvent: {}
+[26.297471] (-) TimerEvent: {}
+[26.397931] (-) TimerEvent: {}
+[26.498610] (-) TimerEvent: {}
+[26.599058] (-) TimerEvent: {}
+[26.699677] (-) TimerEvent: {}
+[26.804687] (-) TimerEvent: {}
+[26.905260] (-) TimerEvent: {}
+[27.005810] (-) TimerEvent: {}
+[27.106381] (-) TimerEvent: {}
+[27.206760] (-) TimerEvent: {}
+[27.307154] (-) TimerEvent: {}
+[27.407651] (-) TimerEvent: {}
+[27.508354] (-) TimerEvent: {}
+[27.609227] (-) TimerEvent: {}
+[27.709867] (-) TimerEvent: {}
+[27.810594] (-) TimerEvent: {}
+[27.911456] (-) TimerEvent: {}
+[28.012450] (-) TimerEvent: {}
+[28.113478] (-) TimerEvent: {}
+[28.217695] (-) TimerEvent: {}
+[28.318856] (-) TimerEvent: {}
+[28.419902] (-) TimerEvent: {}
+[28.520476] (-) TimerEvent: {}
+[28.621332] (-) TimerEvent: {}
+[28.722129] (-) TimerEvent: {}
+[28.823279] (-) TimerEvent: {}
+[28.924101] (-) TimerEvent: {}
+[29.024733] (-) TimerEvent: {}
+[29.125709] (-) TimerEvent: {}
+[29.226806] (-) TimerEvent: {}
+[29.327517] (-) TimerEvent: {}
+[29.428252] (-) TimerEvent: {}
+[29.528872] (-) TimerEvent: {}
+[29.629448] (-) TimerEvent: {}
+[29.730071] (-) TimerEvent: {}
+[29.830888] (-) TimerEvent: {}
+[29.931838] (-) TimerEvent: {}
+[30.092030] (-) TimerEvent: {}
+[30.093478] (<colcon_parallel_executor.executor.parallel.ParallelExecutorExtension object at 0x71961b8292a0>) ParallelStatus: {'processing': ('ardupilot_gazebo',)}
+[30.192203] (-) TimerEvent: {}
+[30.292931] (-) TimerEvent: {}
+[30.393581] (-) TimerEvent: {}
+[30.513123] (-) TimerEvent: {}
+[30.613978] (-) TimerEvent: {}
+[30.717327] (-) TimerEvent: {}
+[30.818339] (-) TimerEvent: {}
+[30.919005] (-) TimerEvent: {}
+[31.019915] (-) TimerEvent: {}
+[31.148666] (-) TimerEvent: {}
+[31.249539] (-) TimerEvent: {}
+[31.350539] (-) TimerEvent: {}
+[31.451619] (-) TimerEvent: {}
+[31.552641] (-) TimerEvent: {}
+[31.653694] (-) TimerEvent: {}
+[31.754619] (-) TimerEvent: {}
+[31.855291] (-) TimerEvent: {}
+[31.955907] (-) TimerEvent: {}
+[32.056597] (-) TimerEvent: {}
+[32.157937] (-) TimerEvent: {}
+[32.258672] (-) TimerEvent: {}
+[32.359465] (-) TimerEvent: {}
+[32.460548] (-) TimerEvent: {}
+[32.561545] (-) TimerEvent: {}
+[32.662489] (-) TimerEvent: {}
+[32.763401] (-) TimerEvent: {}
+[32.816783] (ardupilot_gazebo) StderrLine: {'line': b'\x1b[01m\x1b[K/mnt/f/ardupilot_dev/ardupilot_gazebo/src/ArduPilotPlugin.cc:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid gz::sim::v8::systems::ArduPilotPlugin::LoadControlChannels(sdf::v14::ElementPtr, gz::sim::v8::EntityComponentManager&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[32.819082] (ardupilot_gazebo) StderrLine: {'line': b'\x1b[01m\x1b[K/mnt/f/ardupilot_dev/ardupilot_gazebo/src/ArduPilotPlugin.cc:640:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KentityFromScopedName\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kgz::sim\x1b[m\x1b[K\xe2\x80\x99\n'}
+[32.820146] (ardupilot_gazebo) StderrLine: {'line': b'  640 |   control.link = gz::sim::\x1b[01;31m\x1b[KentityFromScopedName\x1b[m\x1b[K(\n'}
+[32.820725] (ardupilot_gazebo) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[32.821285] (ardupilot_gazebo) StderrLine: {'line': b'\x1b[01m\x1b[K/mnt/f/ardupilot_dev/ardupilot_gazebo/src/ArduPilotPlugin.cc:645:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KentityFromScopedName\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kgz::sim\x1b[m\x1b[K\xe2\x80\x99\n'}
+[32.832582] (ardupilot_gazebo) StderrLine: {'line': b'  645 |     control.link = gz::sim::\x1b[01;31m\x1b[KentityFromScopedName\x1b[m\x1b[K(control.linkName, _ecm);\n'}
+[32.833079] (ardupilot_gazebo) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[32.833511] (ardupilot_gazebo) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ArduPilotPlugin.dir/build.make:76: CMakeFiles/ArduPilotPlugin.dir/src/ArduPilotPlugin.cc.o] Error 1\n'}
+[32.833989] (ardupilot_gazebo) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:89: CMakeFiles/ArduPilotPlugin.dir/all] Error 2\n'}
+[32.834378] (ardupilot_gazebo) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[32.863553] (-) TimerEvent: {}
+[32.964484] (-) TimerEvent: {}
+[33.072962] (-) TimerEvent: {}
+[33.173555] (-) TimerEvent: {}
+[33.274207] (-) TimerEvent: {}
+[33.375109] (-) TimerEvent: {}
+[33.479762] (-) TimerEvent: {}
+[33.580422] (-) TimerEvent: {}
+[33.681056] (-) TimerEvent: {}
+[33.781469] (-) TimerEvent: {}
+[33.881966] (-) TimerEvent: {}
+[33.982388] (-) TimerEvent: {}
+[34.074749] (ardupilot_gazebo) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libParachutePlugin.so\x1b[0m\n'}
+[34.082501] (-) TimerEvent: {}
+[34.182875] (-) TimerEvent: {}
+[34.283237] (-) TimerEvent: {}
+[34.336494] (ardupilot_gazebo) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libCameraZoomPlugin.so\x1b[0m\n'}
+[34.383321] (-) TimerEvent: {}
+[34.483783] (-) TimerEvent: {}
+[34.584102] (-) TimerEvent: {}
+[34.684563] (-) TimerEvent: {}
+[34.784976] (-) TimerEvent: {}
+[34.885438] (-) TimerEvent: {}
+[34.989833] (-) TimerEvent: {}
+[35.090173] (-) TimerEvent: {}
+[35.190512] (-) TimerEvent: {}
+[35.291111] (-) TimerEvent: {}
+[35.391518] (-) TimerEvent: {}
+[35.491847] (-) TimerEvent: {}
+[35.580861] (ardupilot_gazebo) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX shared library libGstCameraPlugin.so\x1b[0m\n'}
+[35.591944] (-) TimerEvent: {}
+[35.692325] (-) TimerEvent: {}
+[35.754574] (ardupilot_gazebo) StdoutLine: {'line': b'[ 90%] Built target ParachutePlugin\n'}
+[35.792441] (-) TimerEvent: {}
+[35.892955] (-) TimerEvent: {}
+[35.990971] (ardupilot_gazebo) StdoutLine: {'line': b'[ 90%] Built target CameraZoomPlugin\n'}
+[35.993023] (-) TimerEvent: {}
+[36.093638] (-) TimerEvent: {}
+[36.194161] (-) TimerEvent: {}
+[36.294508] (-) TimerEvent: {}
+[36.395160] (-) TimerEvent: {}
+[36.495449] (-) TimerEvent: {}
+[36.595880] (-) TimerEvent: {}
+[36.696326] (-) TimerEvent: {}
+[36.769036] (ardupilot_gazebo) StdoutLine: {'line': b'[ 90%] Built target GstCameraPlugin\n'}
+[36.770206] (ardupilot_gazebo) StderrLine: {'line': b'gmake: *** [Makefile:136: all] Error 2\n'}
+[36.775519] (ardupilot_gazebo) CommandEnded: {'returncode': 2}
+[36.796375] (-) TimerEvent: {}
+[36.896651] (-) TimerEvent: {}
+[36.997493] (-) TimerEvent: {}
+[37.029968] (ardupilot_gazebo) JobEnded: {'identifier': 'ardupilot_gazebo', 'rc': 2}
+[37.105980] (-) TimerEvent: {}
+[37.106394] (-) EventReactorShutdown: {}

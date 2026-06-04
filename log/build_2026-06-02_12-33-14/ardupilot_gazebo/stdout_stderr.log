@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target ArduPilotPlugin[0m
+[ 60%] Built target CameraZoomPlugin
+[ 60%] Built target ParachutePlugin
+[ 60%] Built target GstCameraPlugin
+[ 70%] [32mBuilding CXX object CMakeFiles/ArduPilotPlugin.dir/src/ArduPilotPlugin.cc.o[0m
+[01m[K/mnt/f/ardupilot_dev/ardupilot_gazebo/src/ArduPilotPlugin.cc:[m[K In member function ‘[01m[Kvoid gz::sim::v8::systems::ArduPilotPlugin::LoadControlChannels(sdf::v14::ElementPtr, gz::sim::v8::EntityComponentManager&)[m[K’:
+[01m[K/mnt/f/ardupilot_dev/ardupilot_gazebo/src/ArduPilotPlugin.cc:640:16:[m[K [01;31m[Kerror: [m[K‘[01m[KLinkByName[m[K’ was not declared in this scope
+  640 | control.link = [01;31m[KLinkByName[m[K(
+      |                [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ArduPilotPlugin.dir/build.make:76: CMakeFiles/ArduPilotPlugin.dir/src/ArduPilotPlugin.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:89: CMakeFiles/ArduPilotPlugin.dir/all] Error 2
+gmake: *** [Makefile:136: all] Error 2

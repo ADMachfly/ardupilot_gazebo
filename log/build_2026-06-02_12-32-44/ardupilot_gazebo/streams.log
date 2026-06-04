@@ -1,0 +1,20 @@
+[0.217s] Invoking command in '/mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo': HISTTIMEFORMAT=%d/%m/%y %T /usr/bin/cmake --build /mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo -- -j20 -l20
+[0.512s] [35m[1mConsolidate compiler generated dependencies of target CameraZoomPlugin[0m
+[0.513s] [35m[1mConsolidate compiler generated dependencies of target ParachutePlugin[0m
+[0.516s] [35m[1mConsolidate compiler generated dependencies of target GstCameraPlugin[0m
+[0.523s] [35m[1mConsolidate compiler generated dependencies of target ArduPilotPlugin[0m
+[1.426s] [ 40%] Built target ParachutePlugin
+[1.434s] [ 40%] Built target CameraZoomPlugin
+[1.627s] [ 70%] [32mBuilding CXX object CMakeFiles/ArduPilotPlugin.dir/src/ArduPilotPlugin.cc.o[0m
+[1.638s] [ 70%] Built target GstCameraPlugin
+[6.154s] [01m[K/mnt/f/ardupilot_dev/ardupilot_gazebo/src/ArduPilotPlugin.cc:[m[K In member function ‘[01m[Kvoid gz::sim::v8::systems::ArduPilotPlugin::LoadControlChannels(sdf::v14::ElementPtr, gz::sim::v8::EntityComponentManager&)[m[K’:
+[6.155s] [01m[K/mnt/f/ardupilot_dev/ardupilot_gazebo/src/ArduPilotPlugin.cc:640:27:[m[K [01;31m[Kerror: [m[K‘[01m[KentityFromScopedName[m[K’ is not a member of ‘[01m[Kgz::sim[m[K’
+[6.156s]   640 |   control.link = gz::sim::[01;31m[KentityFromScopedName[m[K(
+[6.157s]       |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[6.167s] [01m[K/mnt/f/ardupilot_dev/ardupilot_gazebo/src/ArduPilotPlugin.cc:645:29:[m[K [01;31m[Kerror: [m[K‘[01m[KentityFromScopedName[m[K’ is not a member of ‘[01m[Kgz::sim[m[K’
+[6.168s]   645 |     control.link = gz::sim::[01;31m[KentityFromScopedName[m[K(control.linkName, _ecm);
+[6.169s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[6.169s] gmake[2]: *** [CMakeFiles/ArduPilotPlugin.dir/build.make:76: CMakeFiles/ArduPilotPlugin.dir/src/ArduPilotPlugin.cc.o] Error 1
+[6.170s] gmake[1]: *** [CMakeFiles/Makefile2:89: CMakeFiles/ArduPilotPlugin.dir/all] Error 2
+[6.171s] gmake: *** [Makefile:136: all] Error 2
+[6.171s] Invoked command in '/mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo' returned '2': HISTTIMEFORMAT=%d/%m/%y %T /usr/bin/cmake --build /mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo -- -j20 -l20

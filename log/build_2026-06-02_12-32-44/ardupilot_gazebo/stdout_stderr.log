@@ -1,0 +1,18 @@
+[35m[1mConsolidate compiler generated dependencies of target CameraZoomPlugin[0m
+[35m[1mConsolidate compiler generated dependencies of target ParachutePlugin[0m
+[35m[1mConsolidate compiler generated dependencies of target GstCameraPlugin[0m
+[35m[1mConsolidate compiler generated dependencies of target ArduPilotPlugin[0m
+[ 40%] Built target ParachutePlugin
+[ 40%] Built target CameraZoomPlugin
+[ 70%] [32mBuilding CXX object CMakeFiles/ArduPilotPlugin.dir/src/ArduPilotPlugin.cc.o[0m
+[ 70%] Built target GstCameraPlugin
+[01m[K/mnt/f/ardupilot_dev/ardupilot_gazebo/src/ArduPilotPlugin.cc:[m[K In member function ‘[01m[Kvoid gz::sim::v8::systems::ArduPilotPlugin::LoadControlChannels(sdf::v14::ElementPtr, gz::sim::v8::EntityComponentManager&)[m[K’:
+[01m[K/mnt/f/ardupilot_dev/ardupilot_gazebo/src/ArduPilotPlugin.cc:640:27:[m[K [01;31m[Kerror: [m[K‘[01m[KentityFromScopedName[m[K’ is not a member of ‘[01m[Kgz::sim[m[K’
+  640 |   control.link = gz::sim::[01;31m[KentityFromScopedName[m[K(
+      |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/mnt/f/ardupilot_dev/ardupilot_gazebo/src/ArduPilotPlugin.cc:645:29:[m[K [01;31m[Kerror: [m[K‘[01m[KentityFromScopedName[m[K’ is not a member of ‘[01m[Kgz::sim[m[K’
+  645 |     control.link = gz::sim::[01;31m[KentityFromScopedName[m[K(control.linkName, _ecm);
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ArduPilotPlugin.dir/build.make:76: CMakeFiles/ArduPilotPlugin.dir/src/ArduPilotPlugin.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:89: CMakeFiles/ArduPilotPlugin.dir/all] Error 2
+gmake: *** [Makefile:136: all] Error 2

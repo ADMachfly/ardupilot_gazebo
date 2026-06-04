@@ -1,0 +1,4 @@
+Invoking command in '/mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo': HISTTIMEFORMAT=%d/%m/%y %T /usr/bin/cmake --build /mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo -- -j20 -l20
+Invoked command in '/mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo' returned '0': HISTTIMEFORMAT=%d/%m/%y %T /usr/bin/cmake --build /mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo -- -j20 -l20
+Invoking command in '/mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo': HISTTIMEFORMAT=%d/%m/%y %T /usr/bin/cmake --install /mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo
+Invoked command in '/mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo' returned '0': HISTTIMEFORMAT=%d/%m/%y %T /usr/bin/cmake --install /mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo
