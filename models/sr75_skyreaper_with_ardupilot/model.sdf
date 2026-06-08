@@ -12,13 +12,13 @@
       <!-- From MATLAB aero model:
           CL0 = 0.0221, CLa = 2.308
           zero-lift alpha a0 = -CL0 / CLa ≈ -0.0096 rad -->
-      <a0>-0.0096</a0>
-      <cla>2.308</cla>
+      <a0>-0.04</a0>
+      <cla>5.0</cla>
 
-      <!-- CD0 from MATLAB is 0.00798; using 0.02 for safer Gazebo first test -->
-      <cda>0.08</cda>
+      <!-- SR-75 ArduPilot aero reference: c_drag_p = 0.04 -->
+      <cda>0.04</cda>
 
-      <!-- Pitch stability from MATLAB Cma = -1.764 -->
+      <!-- SR-75 ArduPilot aero reference: c_m_a = -0.5 -->
       <cma>-0.5</cma>
 
       <!-- Starting stall angle; can tune later -->
@@ -28,7 +28,7 @@
       <cma_stall>-0.5</cma_stall>
 
       <!-- Keep Zephyr coordinate convention for now -->
-      <cp>0 -0.10 0</cp>
+      <cp>0 0.20 0</cp>
 
       <!-- Total S = 1.36 m2. Main wing/body gets most of area. -->
       <area>1.00</area>
@@ -42,15 +42,15 @@
     <!-- left_wing: symmetric to right_wing using SR-75 MATLAB aero params -->
     <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
-      <a0>-0.0096</a0>
-      <cla>2.308</cla>
-      <cda>0.08</cda>
-      <cma>-0.5</cma>
+      <a0>-0.04</a0>
+      <cla>5.0</cla>
+      <cda>0.04</cda>
+      <cma>-0.2</cma>
       <alpha_stall>0.20</alpha_stall>
       <cla_stall>-1.5</cla_stall>
       <cda_stall>1.0</cda_stall>
       <cma_stall>-0.5</cma_stall>
-      <cp>0.55 0.20 0</cp>
+      <cp>0.55 0.45 0</cp>
       <area>0.18</area>
       <air_density>1.225</air_density>
       <forward>0 -1 0</forward>
@@ -64,17 +64,17 @@
     <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
 
-      <a0>-0.0096</a0>
-      <cla>2.308</cla>
-      <cda>0.08</cda>
-      <cma>-0.5</cma>
+      <a0>-0.04</a0>
+      <cla>5.0</cla>
+      <cda>0.04</cda>
+      <cma>-0.2</cma>
 
       <alpha_stall>0.20</alpha_stall>
       <cla_stall>-1.5</cla_stall>
       <cda_stall>1.0</cda_stall>
       <cma_stall>-0.5</cma_stall>
 
-      <cp>-0.55 0.20 0</cp>
+      <cp>-0.55 0.45 0</cp>
       <area>0.18</area>
       <air_density>1.225</air_density>
 
