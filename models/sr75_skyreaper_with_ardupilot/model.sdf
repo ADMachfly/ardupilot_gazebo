@@ -5,23 +5,23 @@
       <uri>model://sr75_zephyr_physics</uri>
     </include>
 
-    <!-- SR-75 main wing / body aerodynamic approximation -->
+    <!-- SR-75 main wing / body aerodynamic approximation.
+         Authoritative aero reference:
+         /mnt/e/ardupilot_dev/ardupilot/Tools/autotest/models/sr75.json
+         c_lift_0=0.2, c_lift_a=5.0, c_drag_p=0.04,
+         alpha_stall=0.20, c_m_a=-0.5.
+         Gazebo LiftDrag uses CL = cla * (alpha - a0), so
+         a0 = -CL0 / CLa = -0.04 rad. -->
     <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
 
-      <!-- From MATLAB aero model:
-          CL0 = 0.0221, CLa = 2.308
-          zero-lift alpha a0 = -CL0 / CLa ≈ -0.0096 rad -->
-      <a0>-0.0096</a0>
-      <cla>2.308</cla>
+      <a0>-0.04</a0>
+      <cla>5.0</cla>
 
-      <!-- CD0 from MATLAB is 0.00798; using 0.02 for safer Gazebo first test -->
-      <cda>0.02</cda>
+      <cda>0.04</cda>
 
-      <!-- Pitch stability from MATLAB Cma = -1.764 -->
-      <cma>-1.764</cma>
+      <cma>-0.5</cma>
 
-      <!-- Starting stall angle; can tune later -->
       <alpha_stall>0.20</alpha_stall>
       <cla_stall>-1.5</cla_stall>
       <cda_stall>1.0</cda_stall>
@@ -39,12 +39,12 @@
       <link_name>zephyr::wing</link_name>
     </plugin>
 
-    <!-- left_wing: symmetric to right_wing using SR-75 MATLAB aero params -->
+    <!-- Left elevon panel uses the same ArduPilot SR75 baseline aero. -->
     <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
-      <a0>-0.0096</a0>
-      <cla>2.308</cla>
-      <cda>0.03</cda>
+      <a0>-0.04</a0>
+      <cla>5.0</cla>
+      <cda>0.04</cda>
       <cma>-0.5</cma>
       <alpha_stall>0.20</alpha_stall>
       <cla_stall>-1.5</cla_stall>
@@ -57,6 +57,8 @@
       <upward>0 0 1</upward>
       <link_name>zephyr::wing</link_name>
       <control_joint_name>zephyr::flap_left_joint</control_joint_name>
+      <!-- Retained pending a dedicated Gazebo moment model; sr75.json splits
+           roll/pitch effectiveness into c_l_deltaa and c_m_deltae. -->
       <control_joint_rad_to_cl>0.45</control_joint_rad_to_cl>
     </plugin>
     <!-- right_wing -->
@@ -64,9 +66,9 @@
     <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
 
-      <a0>-0.0096</a0>
-      <cla>2.308</cla>
-      <cda>0.03</cda>
+      <a0>-0.04</a0>
+      <cla>5.0</cla>
+      <cda>0.04</cda>
       <cma>-0.5</cma>
 
       <alpha_stall>0.20</alpha_stall>
@@ -84,29 +86,12 @@
 
       <control_joint_name>zephyr::flap_right_joint</control_joint_name>
 
-      <!-- MATLAB CLde = 0.45. Use negative sign to match current Zephyr convention. -->
+      <!-- Retained pending a dedicated Gazebo moment model; sr75.json splits
+           roll/pitch effectiveness into c_l_deltaa and c_m_deltae. -->
       <control_joint_rad_to_cl>0.45</control_joint_rad_to_cl>
     </plugin>
 
     <!-- left_rudder -->
-    <plugin filename="gz-sim-lift-drag-system"
-        name="gz::sim::systems::LiftDrag">
-      <a0>0.0</a0>
-      <cla>4.752798721</cla>
-      <cda>0.6417112299</cda>
-      <cma>0.0</cma>
-      <alpha_stall>0.3391428111</alpha_stall>
-      <cla_stall>-3.85</cla_stall>
-      <cda_stall>-0.9233984055</cda_stall>
-      <cma_stall>0.0</cma_stall>
-      <cp>-0.76 0.30 0.025</cp>
-      <area>0.12</area>
-      <air_density>1.2041</air_density>
-      <forward>0 -1 0</forward>
-      <upward>1 0 0</upward>
-      <link_name>zephyr::wing</link_name>
-    </plugin>
-    <!-- right_rudder -->
     <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
       <a0>0.0</a0>
@@ -124,8 +109,26 @@
       <upward>1 0 0</upward>
       <link_name>zephyr::wing</link_name>
     </plugin>
-    <!-- propeller_blade_1 -->
+    <!-- right_rudder -->
     <plugin filename="gz-sim-lift-drag-system"
+        name="gz::sim::systems::LiftDrag">
+      <a0>0.0</a0>
+      <cla>4.752798721</cla>
+      <cda>0.6417112299</cda>
+      <cma>0.0</cma>
+      <alpha_stall>0.3391428111</alpha_stall>
+      <cla_stall>-3.85</cla_stall>
+      <cda_stall>-0.9233984055</cda_stall>
+      <cma_stall>0.0</cma_stall>
+      <cp>-0.76 0.30 0.025</cp>
+      <area>0.12</area>
+      <air_density>1.2041</air_density>
+      <forward>0 -1 0</forward>
+      <upward>1 0 0</upward>
+      <link_name>zephyr::wing</link_name>
+    </plugin>
+    <!-- propeller_blade_1 -->
+    <!-- <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
       <a0>0.30</a0>
       <alpha_stall>1.4</alpha_stall>
@@ -141,9 +144,9 @@
       <forward>-1 0 0</forward>
       <upward>0 -1 0</upward>
       <link_name>zephyr::propeller</link_name>
-    </plugin>
+    </plugin> -->
     <!-- propeller_blade_2 -->
-    <plugin filename="gz-sim-lift-drag-system"
+    <!-- <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
       <a0>0.30</a0>
       <alpha_stall>1.4</alpha_stall>
@@ -159,12 +162,13 @@
       <forward>1 0 0</forward>
       <upward>0 -1 0</upward>
       <link_name>zephyr::propeller</link_name>
-    </plugin>
+    </plugin> -->
 
-    <plugin filename="gz-sim-apply-joint-force-system"
+    <!-- <plugin filename="gz-sim-apply-joint-force-system"
       name="gz::sim::systems::ApplyJointForce">
       <joint_name>zephyr::propeller_joint</joint_name>
-    </plugin>
+    </plugin> -->
+
     <plugin filename="gz-sim-apply-joint-force-system"
       name="gz::sim::systems::ApplyJointForce">
       <joint_name>zephyr::flap_left_joint</joint_name>
@@ -191,6 +195,10 @@
             to ArduPilot convention xyz = NED
 
         Zephyr is oriented x-left, y-back, z-up
+        Ground-truth before tuning:
+          - nose-up in Gazebo must show positive ArduPilot pitch
+          - left-wing-down in Gazebo must show positive/expected roll sign
+          - yaw clockwise from above must match ArduPilot heading direction
       -->
       <modelXYZToAirplaneXForwardZDown degrees="true">0 0 0 180 0 -90</modelXYZToAirplaneXForwardZDown>
       <gazeboXYZToNED degrees="true">0 0 0 180 0 90</gazeboXYZToNED>
@@ -230,9 +238,13 @@
         <cmd_min>0.0</cmd_min>
       </control> -->
 
-      <!-- SR-75 Phase 6A: central virtual jet thrust from SERVO3 -->
+      <!-- SR-75 Phase 6A: central virtual jet thrust from SERVO3.
+           This intentionally models the combined ArduPilot throttle output as
+           one centered force. Split left/right engine forces only after the
+           single-throttle takeoff/cruise contract is stable. -->
       <control channel="2">
         <type>LINK_FORCE</type>
+        <jointName>zephyr::left_engine_joint</jointName>
 
       <!-- Main SR-75 body link inside included zephyr physics model -->
         <linkName>zephyr::wing</linkName>
@@ -243,8 +255,9 @@
       <!-- Apply force near engine area; set 0 0 0 first if unstable -->
         <forceOffset>0 0 0</forceOffset>
 
-      <!-- Initial safe total jet thrust -->
-        <maxForce>1500</maxForce>
+      <!-- SR-75 twin-jet rated thrust: 800 N total (2 × 400 N engines).
+           Was 400 N (T/W=0.49) which could not sustain climb at low speed. -->
+        <maxForce>800</maxForce>
 
         <servo_min>1100</servo_min>
         <servo_max>1900</servo_max>
