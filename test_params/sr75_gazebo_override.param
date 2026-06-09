@@ -1,0 +1,29 @@
+# SR-75 Gazebo-only parameter overlay.
+# Load this after ArduPilot's Tools/autotest/models/sr75.parm so Gazebo runs
+# do not inherit the base SR-75 RATO state machine.
+
+SERVO3_FUNCTION 70
+SERVO3_MIN 1100
+SERVO3_MAX 1900
+SERVO3_TRIM 1100
+SERVO3_REVERSED 0
+
+RATO_ENABLE 0
+
+TKOFF_ALT 25
+TKOFF_ROTATE_SPD 50
+TKOFF_PITCH_CD 1000
+TKOFF_LVL_ALT 10
+TKOFF_THR_MAX 100
+TKOFF_THR_MAX_T 10
+TKOFF_THR_MIN 100
+
+ARSPD_FBW_MIN 48
+AIRSPEED_MIN 48
+AIRSPEED_CRUISE 69
+TRIM_ARSPD_CM 6900
+
+THR_CRUISE 55
+
+# Keep this last so it wins even if another included file sets RATO_ENABLE.
+RATO_ENABLE 0

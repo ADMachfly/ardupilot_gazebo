@@ -5,7 +5,7 @@
 [0.138149] (ardupilot_gazebo) JobProgress: {'identifier': 'ardupilot_gazebo', 'progress': 'cmake'}
 [0.197687] (ardupilot_gazebo) JobProgress: {'identifier': 'ardupilot_gazebo', 'progress': 'build'}
 [0.198638] (-) TimerEvent: {}
-[0.201279] (ardupilot_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo', '--', '-j20', '-l20'], 'cwd': '/mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/mnt/f/ardupilot_dev/ardupilot_gazebo/build:/mnt/f/ardupilot_dev/ardupilot_gazebo/build:/mnt/f/ardupilot_dev/ardupilot_gazebo/build:'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HISTFILESIZE', '10000'), ('HISTTIMEFORMAT', '%d/%m/%y %T'), ('GZ_SIM_RESOURCE_PATH', '/mnt/f/ardupilot_dev/ardupilot_gazebo/models:/mnt/f/ardupilot_dev/ardupilot_gazebo/worlds:/mnt/f/ardupilot_dev/ardupilot_gazebo/models:/mnt/f/ardupilot_dev/ardupilot_gazebo/worlds:/mnt/f/ardupilot_dev/ardupilot_gazebo/models:/mnt/f/ardupilot_dev/ardupilot_gazebo/worlds:'), ('USER', 'missi'), ('GIT_ASKPASS', '/home/missi/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('HOME', '/home/missi'), ('OLDPWD', '/mnt/f/ardupilot_dev/ardupilot_gazebo'), ('TERM_PROGRAM_VERSION', '1.122.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-9b9ff692-c0c5-4130-bf6f-a993f4131d69.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/missi/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/missi/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/mnt/f/ardupilot_dev/ardupilot_gazebo/install'), ('LOGNAME', 'missi'), ('NAME', 'BlindBird'), ('WSL_INTEROP', '/run/WSL/310_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/home/missi/.local/bin/colcon'), ('CLAUDE_CODE_SSE_PORT', '35344'), ('TERM', 'xterm-256color'), ('PATH', '/home/missi/.local/bin:/home/missi/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/bin/remote-cli:/mnt/f/ardupilot_dev/ardupilot/Tools/autotest:/mnt/f/ardupilot_dev/ardupilot/Tools/autotest:/usr/lib/ccache:/home/missi/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/missi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft MPI/Bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files/JKI/VI Package Manager/support:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files (x86)/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/Vagrant/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Users/missi/.local/bin:/mnt/c/Users/missi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/missi/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/missi/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/missi/.dotnet/tools:/mnt/c/Users/missi/AppData/Local/Python/bin:/snap/bin:/home/missi/.local/bin:/home/missi/.local/bin:/home/missi/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('HISTSIZE', '10000'), ('LANG', 'C.UTF-8'), ('PYTHONSTARTUP', '/home/missi/.vscode-server/data/User/workspaceStorage/4d6c9e28001e0d71ef70ed9bcf788da9/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f0c3dfffec.sock'), ('TERM_PROGRAM', 'vscode'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up')]), 'shell': False}
+[0.201279] (ardupilot_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/e/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo', '--', '-j20', '-l20'], 'cwd': '/mnt/e/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/mnt/e/ardupilot_dev/ardupilot_gazebo/build:/mnt/e/ardupilot_dev/ardupilot_gazebo/build:/mnt/e/ardupilot_dev/ardupilot_gazebo/build:'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HISTFILESIZE', '10000'), ('HISTTIMEFORMAT', '%d/%m/%y %T'), ('GZ_SIM_RESOURCE_PATH', '/mnt/e/ardupilot_dev/ardupilot_gazebo/models:/mnt/e/ardupilot_dev/ardupilot_gazebo/worlds:/mnt/e/ardupilot_dev/ardupilot_gazebo/models:/mnt/e/ardupilot_dev/ardupilot_gazebo/worlds:/mnt/e/ardupilot_dev/ardupilot_gazebo/models:/mnt/e/ardupilot_dev/ardupilot_gazebo/worlds:'), ('USER', 'missi'), ('GIT_ASKPASS', '/home/missi/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('HOME', '/home/missi'), ('OLDPWD', '/mnt/e/ardupilot_dev/ardupilot_gazebo'), ('TERM_PROGRAM_VERSION', '1.122.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-9b9ff692-c0c5-4130-bf6f-a993f4131d69.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/missi/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/missi/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/mnt/e/ardupilot_dev/ardupilot_gazebo/install'), ('LOGNAME', 'missi'), ('NAME', 'BlindBird'), ('WSL_INTEROP', '/run/WSL/310_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/home/missi/.local/bin/colcon'), ('CLAUDE_CODE_SSE_PORT', '35344'), ('TERM', 'xterm-256color'), ('PATH', '/home/missi/.local/bin:/home/missi/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/bin/remote-cli:/mnt/f/ardupilot_dev/ardupilot/Tools/autotest:/mnt/f/ardupilot_dev/ardupilot/Tools/autotest:/usr/lib/ccache:/home/missi/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/missi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft MPI/Bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files/JKI/VI Package Manager/support:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files (x86)/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/Vagrant/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Users/missi/.local/bin:/mnt/c/Users/missi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/missi/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/missi/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/missi/.dotnet/tools:/mnt/c/Users/missi/AppData/Local/Python/bin:/snap/bin:/home/missi/.local/bin:/home/missi/.local/bin:/home/missi/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('HISTSIZE', '10000'), ('LANG', 'C.UTF-8'), ('PYTHONSTARTUP', '/home/missi/.vscode-server/data/User/workspaceStorage/4d6c9e28001e0d71ef70ed9bcf788da9/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f0c3dfffec.sock'), ('TERM_PROGRAM', 'vscode'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mnt/e/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up')]), 'shell': False}
 [0.298740] (-) TimerEvent: {}
 [0.399096] (-) TimerEvent: {}
 [0.458534] (ardupilot_gazebo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ArduPilotPlugin\x1b[0m\n'}
@@ -115,38 +115,38 @@
 [10.263115] (-) TimerEvent: {}
 [10.274380] (ardupilot_gazebo) CommandEnded: {'returncode': 0}
 [10.285934] (ardupilot_gazebo) JobProgress: {'identifier': 'ardupilot_gazebo', 'progress': 'install'}
-[10.292940] (ardupilot_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo'], 'cwd': '/mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/mnt/f/ardupilot_dev/ardupilot_gazebo/build:/mnt/f/ardupilot_dev/ardupilot_gazebo/build:/mnt/f/ardupilot_dev/ardupilot_gazebo/build:'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HISTFILESIZE', '10000'), ('HISTTIMEFORMAT', '%d/%m/%y %T'), ('GZ_SIM_RESOURCE_PATH', '/mnt/f/ardupilot_dev/ardupilot_gazebo/models:/mnt/f/ardupilot_dev/ardupilot_gazebo/worlds:/mnt/f/ardupilot_dev/ardupilot_gazebo/models:/mnt/f/ardupilot_dev/ardupilot_gazebo/worlds:/mnt/f/ardupilot_dev/ardupilot_gazebo/models:/mnt/f/ardupilot_dev/ardupilot_gazebo/worlds:'), ('USER', 'missi'), ('GIT_ASKPASS', '/home/missi/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('HOME', '/home/missi'), ('OLDPWD', '/mnt/f/ardupilot_dev/ardupilot_gazebo'), ('TERM_PROGRAM_VERSION', '1.122.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-9b9ff692-c0c5-4130-bf6f-a993f4131d69.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/missi/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/missi/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/mnt/f/ardupilot_dev/ardupilot_gazebo/install'), ('LOGNAME', 'missi'), ('NAME', 'BlindBird'), ('WSL_INTEROP', '/run/WSL/310_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/home/missi/.local/bin/colcon'), ('CLAUDE_CODE_SSE_PORT', '35344'), ('TERM', 'xterm-256color'), ('PATH', '/home/missi/.local/bin:/home/missi/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/bin/remote-cli:/mnt/f/ardupilot_dev/ardupilot/Tools/autotest:/mnt/f/ardupilot_dev/ardupilot/Tools/autotest:/usr/lib/ccache:/home/missi/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/missi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft MPI/Bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files/JKI/VI Package Manager/support:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files (x86)/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/Vagrant/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Users/missi/.local/bin:/mnt/c/Users/missi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/missi/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/missi/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/missi/.dotnet/tools:/mnt/c/Users/missi/AppData/Local/Python/bin:/snap/bin:/home/missi/.local/bin:/home/missi/.local/bin:/home/missi/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('HISTSIZE', '10000'), ('LANG', 'C.UTF-8'), ('PYTHONSTARTUP', '/home/missi/.vscode-server/data/User/workspaceStorage/4d6c9e28001e0d71ef70ed9bcf788da9/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f0c3dfffec.sock'), ('TERM_PROGRAM', 'vscode'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up')]), 'shell': False}
+[10.292940] (ardupilot_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mnt/e/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo'], 'cwd': '/mnt/e/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/mnt/e/ardupilot_dev/ardupilot_gazebo/build:/mnt/e/ardupilot_dev/ardupilot_gazebo/build:/mnt/e/ardupilot_dev/ardupilot_gazebo/build:'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HISTFILESIZE', '10000'), ('HISTTIMEFORMAT', '%d/%m/%y %T'), ('GZ_SIM_RESOURCE_PATH', '/mnt/e/ardupilot_dev/ardupilot_gazebo/models:/mnt/e/ardupilot_dev/ardupilot_gazebo/worlds:/mnt/e/ardupilot_dev/ardupilot_gazebo/models:/mnt/e/ardupilot_dev/ardupilot_gazebo/worlds:/mnt/e/ardupilot_dev/ardupilot_gazebo/models:/mnt/e/ardupilot_dev/ardupilot_gazebo/worlds:'), ('USER', 'missi'), ('GIT_ASKPASS', '/home/missi/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('HOME', '/home/missi'), ('OLDPWD', '/mnt/e/ardupilot_dev/ardupilot_gazebo'), ('TERM_PROGRAM_VERSION', '1.122.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-9b9ff692-c0c5-4130-bf6f-a993f4131d69.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/missi/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/missi/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/mnt/e/ardupilot_dev/ardupilot_gazebo/install'), ('LOGNAME', 'missi'), ('NAME', 'BlindBird'), ('WSL_INTEROP', '/run/WSL/310_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/home/missi/.local/bin/colcon'), ('CLAUDE_CODE_SSE_PORT', '35344'), ('TERM', 'xterm-256color'), ('PATH', '/home/missi/.local/bin:/home/missi/.vscode-server/bin/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/bin/remote-cli:/mnt/f/ardupilot_dev/ardupilot/Tools/autotest:/mnt/f/ardupilot_dev/ardupilot/Tools/autotest:/usr/lib/ccache:/home/missi/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/missi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft MPI/Bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files/JKI/VI Package Manager/support:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files (x86)/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/Vagrant/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Users/missi/.local/bin:/mnt/c/Users/missi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/missi/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/missi/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/missi/.dotnet/tools:/mnt/c/Users/missi/AppData/Local/Python/bin:/snap/bin:/home/missi/.local/bin:/home/missi/.local/bin:/home/missi/.local/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('HISTSIZE', '10000'), ('LANG', 'C.UTF-8'), ('PYTHONSTARTUP', '/home/missi/.vscode-server/data/User/workspaceStorage/4d6c9e28001e0d71ef70ed9bcf788da9/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f0c3dfffec.sock'), ('TERM_PROGRAM', 'vscode'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mnt/e/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up')]), 'shell': False}
 [10.299693] (ardupilot_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
-[10.338876] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/lib/ardupilot_gazebo/libArduPilotPlugin.so\n'}
+[10.338876] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/lib/ardupilot_gazebo/libArduPilotPlugin.so\n'}
 [10.363265] (-) TimerEvent: {}
 [10.463868] (-) TimerEvent: {}
 [10.564400] (-) TimerEvent: {}
 [10.665296] (-) TimerEvent: {}
-[10.764704] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/lib/ardupilot_gazebo/libParachutePlugin.so\n'}
+[10.764704] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/lib/ardupilot_gazebo/libParachutePlugin.so\n'}
 [10.767080] (-) TimerEvent: {}
 [10.867876] (-) TimerEvent: {}
 [10.968699] (-) TimerEvent: {}
 [11.069360] (-) TimerEvent: {}
 [11.170006] (-) TimerEvent: {}
-[11.187890] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/lib/ardupilot_gazebo/libCameraZoomPlugin.so\n'}
+[11.187890] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/lib/ardupilot_gazebo/libCameraZoomPlugin.so\n'}
 [11.270216] (-) TimerEvent: {}
 [11.370703] (-) TimerEvent: {}
 [11.471338] (-) TimerEvent: {}
-[11.557660] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/lib/ardupilot_gazebo/libGstCameraPlugin.so\n'}
+[11.557660] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/lib/ardupilot_gazebo/libGstCameraPlugin.so\n'}
 [11.571514] (-) TimerEvent: {}
 [11.672132] (-) TimerEvent: {}
 [11.776565] (-) TimerEvent: {}
-[11.854010] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/config\n'}
+[11.854010] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/config\n'}
 [11.876737] (-) TimerEvent: {}
-[11.888916] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/config/gazebo-iris-gimbal.parm\n'}
+[11.888916] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/config/gazebo-iris-gimbal.parm\n'}
 [11.977051] (-) TimerEvent: {}
 [12.078539] (-) TimerEvent: {}
 [12.179913] (-) TimerEvent: {}
-[12.186602] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models\n'}
-[12.250858] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_1d\n'}
+[12.186602] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models\n'}
+[12.250858] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_1d\n'}
 [12.280072] (-) TimerEvent: {}
-[12.294530] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_1d/meshes\n'}
-[12.346833] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_1d/meshes/base_arm.dae\n'}
+[12.294530] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_1d/meshes\n'}
+[12.346833] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_1d/meshes/base_arm.dae\n'}
 [12.380206] (-) TimerEvent: {}
 [12.481120] (-) TimerEvent: {}
 [12.582625] (-) TimerEvent: {}
@@ -154,7 +154,7 @@
 [12.784966] (-) TimerEvent: {}
 [12.885457] (-) TimerEvent: {}
 [12.986281] (-) TimerEvent: {}
-[13.055903] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_1d/meshes/base_main.dae\n'}
+[13.055903] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_1d/meshes/base_main.dae\n'}
 [13.086482] (-) TimerEvent: {}
 [13.187282] (-) TimerEvent: {}
 [13.288511] (-) TimerEvent: {}
@@ -164,31 +164,31 @@
 [13.691950] (-) TimerEvent: {}
 [13.792713] (-) TimerEvent: {}
 [13.894401] (-) TimerEvent: {}
-[13.940269] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_1d/meshes/tilt.dae\n'}
+[13.940269] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_1d/meshes/tilt.dae\n'}
 [13.994497] (-) TimerEvent: {}
 [14.095654] (-) TimerEvent: {}
 [14.196960] (-) TimerEvent: {}
 [14.298657] (-) TimerEvent: {}
 [14.399088] (-) TimerEvent: {}
 [14.507982] (-) TimerEvent: {}
-[14.531076] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_1d/model.config\n'}
+[14.531076] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_1d/model.config\n'}
 [14.608149] (-) TimerEvent: {}
 [14.710262] (-) TimerEvent: {}
 [14.810883] (-) TimerEvent: {}
-[14.840733] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_1d/model.sdf\n'}
+[14.840733] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_1d/model.sdf\n'}
 [14.911004] (-) TimerEvent: {}
 [15.011619] (-) TimerEvent: {}
-[15.062098] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_2d\n'}
+[15.062098] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_2d\n'}
 [15.111717] (-) TimerEvent: {}
-[15.127128] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_2d/meshes\n'}
-[15.200217] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_2d/meshes/base_arm.dae\n'}
+[15.127128] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_2d/meshes\n'}
+[15.200217] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_2d/meshes/base_arm.dae\n'}
 [15.211809] (-) TimerEvent: {}
 [15.312302] (-) TimerEvent: {}
 [15.413028] (-) TimerEvent: {}
 [15.513896] (-) TimerEvent: {}
 [15.614772] (-) TimerEvent: {}
 [15.715234] (-) TimerEvent: {}
-[15.807096] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_2d/meshes/base_main.dae\n'}
+[15.807096] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_2d/meshes/base_main.dae\n'}
 [15.815298] (-) TimerEvent: {}
 [15.915808] (-) TimerEvent: {}
 [16.017043] (-) TimerEvent: {}
@@ -199,24 +199,24 @@
 [16.520584] (-) TimerEvent: {}
 [16.621022] (-) TimerEvent: {}
 [16.721925] (-) TimerEvent: {}
-[16.764801] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_2d/meshes/tilt.dae\n'}
+[16.764801] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_2d/meshes/tilt.dae\n'}
 [16.822010] (-) TimerEvent: {}
 [16.922459] (-) TimerEvent: {}
 [17.023172] (-) TimerEvent: {}
 [17.124467] (-) TimerEvent: {}
 [17.225049] (-) TimerEvent: {}
 [17.326332] (-) TimerEvent: {}
-[17.404648] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_2d/model.config\n'}
+[17.404648] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_2d/model.config\n'}
 [17.426517] (-) TimerEvent: {}
 [17.527008] (-) TimerEvent: {}
 [17.628042] (-) TimerEvent: {}
 [17.729152] (-) TimerEvent: {}
-[17.756327] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_2d/model.sdf\n'}
+[17.756327] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_2d/model.sdf\n'}
 [17.829315] (-) TimerEvent: {}
-[17.900835] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_3d\n'}
+[17.900835] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_3d\n'}
 [17.929416] (-) TimerEvent: {}
-[17.935489] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_3d/meshes\n'}
-[17.985567] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_3d/meshes/base_plate.dae\n'}
+[17.935489] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_3d/meshes\n'}
+[17.985567] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_3d/meshes/base_plate.dae\n'}
 [18.029531] (-) TimerEvent: {}
 [18.130048] (-) TimerEvent: {}
 [18.230752] (-) TimerEvent: {}
@@ -227,43 +227,43 @@
 [18.734494] (-) TimerEvent: {}
 [18.835535] (-) TimerEvent: {}
 [18.936874] (-) TimerEvent: {}
-[18.951991] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_3d/meshes/camera_enclosure.dae\n'}
+[18.951991] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_3d/meshes/camera_enclosure.dae\n'}
 [19.037124] (-) TimerEvent: {}
 [19.138536] (-) TimerEvent: {}
 [19.238936] (-) TimerEvent: {}
-[19.266845] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_3d/meshes/roll_arm.dae\n'}
+[19.266845] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_3d/meshes/roll_arm.dae\n'}
 [19.339184] (-) TimerEvent: {}
 [19.440618] (-) TimerEvent: {}
 [19.541454] (-) TimerEvent: {}
 [19.641959] (-) TimerEvent: {}
-[19.705501] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_3d/meshes/yaw_arm.dae\n'}
+[19.705501] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_3d/meshes/yaw_arm.dae\n'}
 [19.742180] (-) TimerEvent: {}
 [19.842805] (-) TimerEvent: {}
 [19.943408] (-) TimerEvent: {}
 [20.043889] (-) TimerEvent: {}
-[20.090492] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_3d/model.config\n'}
+[20.090492] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_3d/model.config\n'}
 [20.144061] (-) TimerEvent: {}
 [20.244986] (-) TimerEvent: {}
 [20.345975] (-) TimerEvent: {}
-[20.432952] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_3d/model.sdf\n'}
+[20.432952] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/gimbal_small_3d/model.sdf\n'}
 [20.446061] (-) TimerEvent: {}
 [20.546493] (-) TimerEvent: {}
-[20.569616] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_ardupilot\n'}
-[20.603608] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_ardupilot/model.config\n'}
+[20.569616] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_ardupilot\n'}
+[20.603608] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_ardupilot/model.config\n'}
 [20.646677] (-) TimerEvent: {}
-[20.740438] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_ardupilot/model.sdf\n'}
+[20.740438] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_ardupilot/model.sdf\n'}
 [20.746754] (-) TimerEvent: {}
 [20.847155] (-) TimerEvent: {}
-[20.886503] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_gimbal\n'}
-[20.924136] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_gimbal/model.config\n'}
+[20.886503] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_gimbal\n'}
+[20.924136] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_gimbal/model.config\n'}
 [20.947273] (-) TimerEvent: {}
 [21.051424] (-) TimerEvent: {}
-[21.069844] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_gimbal/model.sdf\n'}
+[21.069844] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_gimbal/model.sdf\n'}
 [21.151548] (-) TimerEvent: {}
-[21.198272] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_standoffs\n'}
-[21.243172] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_standoffs/meshes\n'}
+[21.198272] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_standoffs\n'}
+[21.243172] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_standoffs/meshes\n'}
 [21.251740] (-) TimerEvent: {}
-[21.279826] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_standoffs/meshes/iris.dae\n'}
+[21.279826] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_standoffs/meshes/iris.dae\n'}
 [21.352203] (-) TimerEvent: {}
 [21.453097] (-) TimerEvent: {}
 [21.553667] (-) TimerEvent: {}
@@ -295,38 +295,38 @@
 [24.176126] (-) TimerEvent: {}
 [24.277551] (-) TimerEvent: {}
 [24.379126] (-) TimerEvent: {}
-[24.381761] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_standoffs/meshes/iris_collision.stl\n'}
+[24.381761] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_standoffs/meshes/iris_collision.stl\n'}
 [24.479160] (-) TimerEvent: {}
 [24.579505] (-) TimerEvent: {}
-[24.618331] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_standoffs/meshes/iris_prop_ccw.dae\n'}
+[24.618331] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_standoffs/meshes/iris_prop_ccw.dae\n'}
 [24.679585] (-) TimerEvent: {}
 [24.779991] (-) TimerEvent: {}
-[24.832844] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_standoffs/meshes/iris_prop_cw.dae\n'}
+[24.832844] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_standoffs/meshes/iris_prop_cw.dae\n'}
 [24.880134] (-) TimerEvent: {}
 [24.980879] (-) TimerEvent: {}
-[25.043485] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_standoffs/model.config\n'}
+[25.043485] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_standoffs/model.config\n'}
 [25.080982] (-) TimerEvent: {}
 [25.181646] (-) TimerEvent: {}
-[25.277259] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_standoffs/model.sdf\n'}
+[25.277259] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/iris_with_standoffs/model.sdf\n'}
 [25.281681] (-) TimerEvent: {}
 [25.382367] (-) TimerEvent: {}
-[25.422911] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/parachute_small\n'}
-[25.454469] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/parachute_small/meshes\n'}
+[25.422911] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/parachute_small\n'}
+[25.454469] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/parachute_small/meshes\n'}
 [25.482448] (-) TimerEvent: {}
-[25.492165] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/parachute_small/meshes/parachute_small.dae\n'}
+[25.492165] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/parachute_small/meshes/parachute_small.dae\n'}
 [25.582605] (-) TimerEvent: {}
 [25.683592] (-) TimerEvent: {}
-[25.714677] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/parachute_small/model.config\n'}
+[25.714677] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/parachute_small/model.config\n'}
 [25.783721] (-) TimerEvent: {}
 [25.884730] (-) TimerEvent: {}
-[25.976776] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/parachute_small/model.sdf\n'}
+[25.976776] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/parachute_small/model.sdf\n'}
 [25.984776] (-) TimerEvent: {}
 [26.085091] (-) TimerEvent: {}
-[26.111106] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway\n'}
-[26.143745] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/materials\n'}
-[26.182151] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/materials/textures\n'}
+[26.111106] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway\n'}
+[26.143745] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/materials\n'}
+[26.182151] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/materials/textures\n'}
 [26.185149] (-) TimerEvent: {}
-[26.219806] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/materials/textures/Grass004_2K_AmbientOcclusion.jpg\n'}
+[26.219806] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/materials/textures/Grass004_2K_AmbientOcclusion.jpg\n'}
 [26.285313] (-) TimerEvent: {}
 [26.386392] (-) TimerEvent: {}
 [26.487433] (-) TimerEvent: {}
@@ -374,7 +374,7 @@
 [30.614272] (-) TimerEvent: {}
 [30.714770] (-) TimerEvent: {}
 [30.815398] (-) TimerEvent: {}
-[30.896377] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/materials/textures/Grass004_2K_Color copy.jpg\n'}
+[30.896377] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/materials/textures/Grass004_2K_Color copy.jpg\n'}
 [30.915549] (-) TimerEvent: {}
 [31.016306] (-) TimerEvent: {}
 [31.117093] (-) TimerEvent: {}
@@ -497,7 +497,7 @@
 [43.039107] (-) TimerEvent: {}
 [43.140191] (-) TimerEvent: {}
 [43.240986] (-) TimerEvent: {}
-[43.243235] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/materials/textures/Grass004_2K_Color.jpg\n'}
+[43.243235] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/materials/textures/Grass004_2K_Color.jpg\n'}
 [43.341224] (-) TimerEvent: {}
 [43.442395] (-) TimerEvent: {}
 [43.543388] (-) TimerEvent: {}
@@ -513,7 +513,7 @@
 [44.552486] (-) TimerEvent: {}
 [44.653580] (-) TimerEvent: {}
 [44.754449] (-) TimerEvent: {}
-[44.828504] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/materials/textures/Grass004_2K_Displacement.jpg\n'}
+[44.828504] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/materials/textures/Grass004_2K_Displacement.jpg\n'}
 [44.854609] (-) TimerEvent: {}
 [44.955207] (-) TimerEvent: {}
 [45.056846] (-) TimerEvent: {}
@@ -563,7 +563,7 @@
 [49.501172] (-) TimerEvent: {}
 [49.601923] (-) TimerEvent: {}
 [49.702489] (-) TimerEvent: {}
-[49.724490] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/materials/textures/Grass004_2K_NormalGL.jpg\n'}
+[49.724490] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/materials/textures/Grass004_2K_NormalGL.jpg\n'}
 [49.802721] (-) TimerEvent: {}
 [49.903417] (-) TimerEvent: {}
 [50.004541] (-) TimerEvent: {}
@@ -708,7 +708,7 @@
 [63.939834] (-) TimerEvent: {}
 [64.041025] (-) TimerEvent: {}
 [64.142131] (-) TimerEvent: {}
-[64.149526] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/materials/textures/Grass004_2K_Roughness.jpg\n'}
+[64.149526] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/materials/textures/Grass004_2K_Roughness.jpg\n'}
 [64.242328] (-) TimerEvent: {}
 [64.343544] (-) TimerEvent: {}
 [64.444634] (-) TimerEvent: {}
@@ -751,65 +751,65 @@
 [68.173882] (-) TimerEvent: {}
 [68.274775] (-) TimerEvent: {}
 [68.375486] (-) TimerEvent: {}
-[68.442971] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/materials/textures/runway.png\n'}
+[68.442971] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/materials/textures/runway.png\n'}
 [68.475672] (-) TimerEvent: {}
 [68.576207] (-) TimerEvent: {}
-[68.620115] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/meshes\n'}
-[68.657214] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/meshes/airfield.dae\n'}
+[68.620115] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/meshes\n'}
+[68.657214] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/meshes/airfield.dae\n'}
 [68.676283] (-) TimerEvent: {}
 [68.776742] (-) TimerEvent: {}
 [68.878059] (-) TimerEvent: {}
-[68.972277] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/model.config\n'}
+[68.972277] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/model.config\n'}
 [68.978156] (-) TimerEvent: {}
 [69.078566] (-) TimerEvent: {}
 [69.179055] (-) TimerEvent: {}
-[69.221544] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/model.sdf\n'}
+[69.221544] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/runway/model.sdf\n'}
 [69.279239] (-) TimerEvent: {}
-[69.344562] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75\n'}
+[69.344562] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75\n'}
 [69.379380] (-) TimerEvent: {}
-[69.393442] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/materials\n'}
-[69.477959] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/materials/textures\n'}
+[69.393442] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/materials\n'}
+[69.477959] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/materials/textures\n'}
 [69.479464] (-) TimerEvent: {}
-[69.536223] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/materials/textures/wing.png\n'}
+[69.536223] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/materials/textures/wing.png\n'}
 [69.579632] (-) TimerEvent: {}
 [69.680354] (-) TimerEvent: {}
 [69.780792] (-) TimerEvent: {}
 [69.881481] (-) TimerEvent: {}
-[69.948971] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/meshes\n'}
+[69.948971] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/meshes\n'}
 [69.981621] (-) TimerEvent: {}
-[69.994591] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/meshes/parachute_small.dae\n'}
+[69.994591] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/meshes/parachute_small.dae\n'}
 [70.081775] (-) TimerEvent: {}
 [70.182436] (-) TimerEvent: {}
-[70.261525] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/meshes/wing.dae\n'}
+[70.261525] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/meshes/wing.dae\n'}
 [70.282587] (-) TimerEvent: {}
 [70.383288] (-) TimerEvent: {}
-[70.432819] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/model.config\n'}
+[70.432819] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/model.config\n'}
 [70.483411] (-) TimerEvent: {}
 [70.584165] (-) TimerEvent: {}
 [70.685447] (-) TimerEvent: {}
 [70.786225] (-) TimerEvent: {}
-[70.793041] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/model.sdf\n'}
+[70.793041] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/model.sdf\n'}
 [70.886343] (-) TimerEvent: {}
-[70.928816] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/thumbnails\n'}
-[70.968895] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/thumbnails/1.png\n'}
+[70.928816] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/thumbnails\n'}
+[70.968895] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/thumbnails/1.png\n'}
 [70.986512] (-) TimerEvent: {}
 [71.086940] (-) TimerEvent: {}
-[71.118508] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/thumbnails/2.png\n'}
+[71.118508] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/thumbnails/2.png\n'}
 [71.187047] (-) TimerEvent: {}
-[71.287699] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/thumbnails/3.png\n'}
+[71.287699] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/thumbnails/3.png\n'}
 [71.288734] (-) TimerEvent: {}
 [71.389210] (-) TimerEvent: {}
-[71.488903] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/thumbnails/4.png\n'}
+[71.488903] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/thumbnails/4.png\n'}
 [71.492093] (-) TimerEvent: {}
 [71.593678] (-) TimerEvent: {}
 [71.694615] (-) TimerEvent: {}
-[71.764854] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/thumbnails/5.png\n'}
+[71.764854] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75/thumbnails/5.png\n'}
 [71.794707] (-) TimerEvent: {}
 [71.895259] (-) TimerEvent: {}
-[71.938483] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_skyreaper\n'}
-[71.970974] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_skyreaper/meshes\n'}
+[71.938483] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_skyreaper\n'}
+[71.970974] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_skyreaper/meshes\n'}
 [71.995361] (-) TimerEvent: {}
-[72.009188] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_skyreaper/meshes/Skyreaper_Base_model.STL\n'}
+[72.009188] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_skyreaper/meshes/Skyreaper_Base_model.STL\n'}
 [72.095613] (-) TimerEvent: {}
 [72.196599] (-) TimerEvent: {}
 [72.297842] (-) TimerEvent: {}
@@ -833,33 +833,33 @@
 [74.112734] (-) TimerEvent: {}
 [74.214002] (-) TimerEvent: {}
 [74.315061] (-) TimerEvent: {}
-[74.360826] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_skyreaper/model.config\n'}
+[74.360826] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_skyreaper/model.config\n'}
 [74.415223] (-) TimerEvent: {}
 [74.516038] (-) TimerEvent: {}
 [74.617649] (-) TimerEvent: {}
-[74.644138] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_skyreaper/model.sdf\n'}
+[74.644138] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_skyreaper/model.sdf\n'}
 [74.717764] (-) TimerEvent: {}
-[74.789801] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_skyreaper_with_ardupilot\n'}
+[74.789801] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_skyreaper_with_ardupilot\n'}
 [74.817893] (-) TimerEvent: {}
-[74.831787] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_skyreaper_with_ardupilot/model.config\n'}
+[74.831787] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_skyreaper_with_ardupilot/model.config\n'}
 [74.918028] (-) TimerEvent: {}
 [75.018463] (-) TimerEvent: {}
 [75.118842] (-) TimerEvent: {}
-[75.134585] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_skyreaper_with_ardupilot/model.sdf\n'}
+[75.134585] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_skyreaper_with_ardupilot/model.sdf\n'}
 [75.218994] (-) TimerEvent: {}
 [75.319589] (-) TimerEvent: {}
-[75.342545] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_skyreaper_with_ardupilot_backup_phase3\n'}
-[75.376145] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_skyreaper_with_ardupilot_backup_phase3/model.config\n'}
+[75.342545] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_skyreaper_with_ardupilot_backup_phase3\n'}
+[75.376145] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_skyreaper_with_ardupilot_backup_phase3/model.config\n'}
 [75.419776] (-) TimerEvent: {}
 [75.520394] (-) TimerEvent: {}
 [75.621422] (-) TimerEvent: {}
-[75.683818] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_skyreaper_with_ardupilot_backup_phase3/model.sdf\n'}
+[75.683818] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_skyreaper_with_ardupilot_backup_phase3/model.sdf\n'}
 [75.721618] (-) TimerEvent: {}
 [75.822746] (-) TimerEvent: {}
-[75.851235] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_with_ardupilot\n'}
-[75.890586] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_with_ardupilot/meshes\n'}
+[75.851235] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_with_ardupilot\n'}
+[75.890586] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_with_ardupilot/meshes\n'}
 [75.922854] (-) TimerEvent: {}
-[75.935187] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_with_ardupilot/meshes/Skyreaper_Base_model.STL\n'}
+[75.935187] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_with_ardupilot/meshes/Skyreaper_Base_model.STL\n'}
 [76.022957] (-) TimerEvent: {}
 [76.123510] (-) TimerEvent: {}
 [76.224365] (-) TimerEvent: {}
@@ -884,27 +884,27 @@
 [78.142241] (-) TimerEvent: {}
 [78.243054] (-) TimerEvent: {}
 [78.343643] (-) TimerEvent: {}
-[78.426890] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_with_ardupilot/model.config\n'}
+[78.426890] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_with_ardupilot/model.config\n'}
 [78.443825] (-) TimerEvent: {}
 [78.544702] (-) TimerEvent: {}
 [78.645297] (-) TimerEvent: {}
-[78.704259] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_with_ardupilot/model.sdf\n'}
+[78.704259] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_with_ardupilot/model.sdf\n'}
 [78.745457] (-) TimerEvent: {}
-[78.840387] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics\n'}
+[78.840387] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics\n'}
 [78.845534] (-) TimerEvent: {}
-[78.876207] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/materials\n'}
-[78.910257] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/materials/textures\n'}
+[78.876207] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/materials\n'}
+[78.910257] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/materials/textures\n'}
 [78.945577] (-) TimerEvent: {}
-[78.949698] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/materials/textures/wing.png\n'}
+[78.949698] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/materials/textures/wing.png\n'}
 [79.045713] (-) TimerEvent: {}
 [79.146407] (-) TimerEvent: {}
 [79.247912] (-) TimerEvent: {}
-[79.327210] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/meshes\n'}
+[79.327210] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/meshes\n'}
 [79.348049] (-) TimerEvent: {}
-[79.365473] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/meshes/parachute_small.dae\n'}
+[79.365473] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/meshes/parachute_small.dae\n'}
 [79.448195] (-) TimerEvent: {}
 [79.548992] (-) TimerEvent: {}
-[79.593542] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/meshes/Skyreaper_Base_model.STL\n'}
+[79.593542] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/meshes/Skyreaper_Base_model.STL\n'}
 [79.649167] (-) TimerEvent: {}
 [79.751219] (-) TimerEvent: {}
 [79.851751] (-) TimerEvent: {}
@@ -931,45 +931,45 @@
 [81.971028] (-) TimerEvent: {}
 [82.072190] (-) TimerEvent: {}
 [82.172937] (-) TimerEvent: {}
-[82.230652] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/meshes/wing.dae\n'}
+[82.230652] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/meshes/wing.dae\n'}
 [82.273071] (-) TimerEvent: {}
 [82.373837] (-) TimerEvent: {}
-[82.399485] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/model.config\n'}
+[82.399485] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/model.config\n'}
 [82.474005] (-) TimerEvent: {}
 [82.574788] (-) TimerEvent: {}
-[82.650010] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/model.sdf\n'}
+[82.650010] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/model.sdf\n'}
 [82.674943] (-) TimerEvent: {}
 [82.775384] (-) TimerEvent: {}
-[82.819168] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/thumbnails\n'}
-[82.858282] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/thumbnails/1.png\n'}
+[82.819168] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/thumbnails\n'}
+[82.858282] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/thumbnails/1.png\n'}
 [82.875544] (-) TimerEvent: {}
 [82.975944] (-) TimerEvent: {}
-[83.027063] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/thumbnails/2.png\n'}
+[83.027063] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/thumbnails/2.png\n'}
 [83.076154] (-) TimerEvent: {}
-[83.171906] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/thumbnails/3.png\n'}
+[83.171906] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/thumbnails/3.png\n'}
 [83.176220] (-) TimerEvent: {}
 [83.276604] (-) TimerEvent: {}
-[83.317735] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/thumbnails/4.png\n'}
+[83.317735] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/thumbnails/4.png\n'}
 [83.376685] (-) TimerEvent: {}
 [83.477366] (-) TimerEvent: {}
-[83.481350] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/thumbnails/5.png\n'}
+[83.481350] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics/thumbnails/5.png\n'}
 [83.577492] (-) TimerEvent: {}
-[83.669142] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1\n'}
+[83.669142] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1\n'}
 [83.677567] (-) TimerEvent: {}
-[83.740516] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/materials\n'}
+[83.740516] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/materials\n'}
 [83.777658] (-) TimerEvent: {}
-[83.839260] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/materials/textures\n'}
+[83.839260] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/materials/textures\n'}
 [83.877767] (-) TimerEvent: {}
-[83.907660] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/materials/textures/wing.png\n'}
+[83.907660] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/materials/textures/wing.png\n'}
 [83.978067] (-) TimerEvent: {}
 [84.079857] (-) TimerEvent: {}
 [84.180955] (-) TimerEvent: {}
 [84.281679] (-) TimerEvent: {}
-[84.305488] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/meshes\n'}
-[84.343535] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/meshes/parachute_small.dae\n'}
+[84.305488] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/meshes\n'}
+[84.343535] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/meshes/parachute_small.dae\n'}
 [84.381933] (-) TimerEvent: {}
 [84.484903] (-) TimerEvent: {}
-[84.558347] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/meshes/Skyreaper_Base_model.STL\n'}
+[84.558347] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/meshes/Skyreaper_Base_model.STL\n'}
 [84.585054] (-) TimerEvent: {}
 [84.685684] (-) TimerEvent: {}
 [84.786838] (-) TimerEvent: {}
@@ -993,45 +993,45 @@
 [86.601863] (-) TimerEvent: {}
 [86.702814] (-) TimerEvent: {}
 [86.803469] (-) TimerEvent: {}
-[86.891662] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/meshes/wing.dae\n'}
+[86.891662] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/meshes/wing.dae\n'}
 [86.903567] (-) TimerEvent: {}
 [87.004003] (-) TimerEvent: {}
 [87.104914] (-) TimerEvent: {}
-[87.127514] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/model.config\n'}
+[87.127514] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/model.config\n'}
 [87.205022] (-) TimerEvent: {}
 [87.305673] (-) TimerEvent: {}
 [87.406268] (-) TimerEvent: {}
-[87.458887] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/model.sdf\n'}
+[87.458887] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/model.sdf\n'}
 [87.506358] (-) TimerEvent: {}
-[87.597685] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/thumbnails\n'}
+[87.597685] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/thumbnails\n'}
 [87.606487] (-) TimerEvent: {}
-[87.636373] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/thumbnails/1.png\n'}
+[87.636373] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/thumbnails/1.png\n'}
 [87.706607] (-) TimerEvent: {}
-[87.799739] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/thumbnails/2.png\n'}
+[87.799739] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/thumbnails/2.png\n'}
 [87.806655] (-) TimerEvent: {}
 [87.907030] (-) TimerEvent: {}
-[87.963232] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/thumbnails/3.png\n'}
+[87.963232] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/thumbnails/3.png\n'}
 [88.007147] (-) TimerEvent: {}
 [88.107614] (-) TimerEvent: {}
-[88.111445] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/thumbnails/4.png\n'}
+[88.111445] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/thumbnails/4.png\n'}
 [88.207715] (-) TimerEvent: {}
-[88.236649] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/thumbnails/5.png\n'}
+[88.236649] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase1/thumbnails/5.png\n'}
 [88.307827] (-) TimerEvent: {}
-[88.366805] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2\n'}
+[88.366805] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2\n'}
 [88.407913] (-) TimerEvent: {}
-[88.408472] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/materials\n'}
-[88.453653] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/materials/textures\n'}
-[88.507727] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/materials/textures/wing.png\n'}
+[88.408472] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/materials\n'}
+[88.453653] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/materials/textures\n'}
+[88.507727] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/materials/textures/wing.png\n'}
 [88.509002] (-) TimerEvent: {}
 [88.609491] (-) TimerEvent: {}
 [88.710144] (-) TimerEvent: {}
 [88.810841] (-) TimerEvent: {}
-[88.911071] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/meshes\n'}
+[88.911071] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/meshes\n'}
 [88.911911] (-) TimerEvent: {}
-[88.951467] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/meshes/parachute_small.dae\n'}
+[88.951467] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/meshes/parachute_small.dae\n'}
 [89.012026] (-) TimerEvent: {}
 [89.112662] (-) TimerEvent: {}
-[89.202829] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/meshes/Skyreaper_Base_model.STL\n'}
+[89.202829] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/meshes/Skyreaper_Base_model.STL\n'}
 [89.212792] (-) TimerEvent: {}
 [89.313209] (-) TimerEvent: {}
 [89.414204] (-) TimerEvent: {}
@@ -1058,47 +1058,47 @@
 [91.430318] (-) TimerEvent: {}
 [91.531398] (-) TimerEvent: {}
 [91.632541] (-) TimerEvent: {}
-[91.639336] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/meshes/wing.dae\n'}
+[91.639336] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/meshes/wing.dae\n'}
 [91.732634] (-) TimerEvent: {}
-[91.806621] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/model.config\n'}
+[91.806621] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/model.config\n'}
 [91.832760] (-) TimerEvent: {}
 [91.933357] (-) TimerEvent: {}
 [92.034199] (-) TimerEvent: {}
 [92.135067] (-) TimerEvent: {}
-[92.143134] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/model.sdf\n'}
+[92.143134] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/model.sdf\n'}
 [92.235209] (-) TimerEvent: {}
-[92.316208] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/thumbnails\n'}
+[92.316208] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/thumbnails\n'}
 [92.335285] (-) TimerEvent: {}
-[92.357777] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/thumbnails/1.png\n'}
+[92.357777] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/thumbnails/1.png\n'}
 [92.435432] (-) TimerEvent: {}
-[92.513732] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/thumbnails/2.png\n'}
+[92.513732] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/thumbnails/2.png\n'}
 [92.535636] (-) TimerEvent: {}
 [92.636030] (-) TimerEvent: {}
-[92.706124] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/thumbnails/3.png\n'}
+[92.706124] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/thumbnails/3.png\n'}
 [92.736166] (-) TimerEvent: {}
 [92.836921] (-) TimerEvent: {}
-[92.873705] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/thumbnails/4.png\n'}
+[92.873705] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/thumbnails/4.png\n'}
 [92.937107] (-) TimerEvent: {}
 [93.037746] (-) TimerEvent: {}
-[93.042825] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/thumbnails/5.png\n'}
+[93.042825] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase2/thumbnails/5.png\n'}
 [93.137956] (-) TimerEvent: {}
-[93.180930] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3\n'}
-[93.222701] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/materials\n'}
+[93.180930] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3\n'}
+[93.222701] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/materials\n'}
 [93.238128] (-) TimerEvent: {}
-[93.258956] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/materials/textures\n'}
-[93.312679] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/materials/textures/wing.png\n'}
+[93.258956] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/materials/textures\n'}
+[93.312679] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/materials/textures/wing.png\n'}
 [93.338307] (-) TimerEvent: {}
 [93.438904] (-) TimerEvent: {}
 [93.539814] (-) TimerEvent: {}
 [93.640484] (-) TimerEvent: {}
-[93.719764] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/meshes\n'}
+[93.719764] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/meshes\n'}
 [93.740661] (-) TimerEvent: {}
 [93.842320] (-) TimerEvent: {}
-[93.870028] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/meshes/parachute_small.dae\n'}
+[93.870028] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/meshes/parachute_small.dae\n'}
 [93.942439] (-) TimerEvent: {}
 [94.043149] (-) TimerEvent: {}
 [94.143833] (-) TimerEvent: {}
-[94.161473] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/meshes/Skyreaper_Base_model.STL\n'}
+[94.161473] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/meshes/Skyreaper_Base_model.STL\n'}
 [94.243936] (-) TimerEvent: {}
 [94.344481] (-) TimerEvent: {}
 [94.445493] (-) TimerEvent: {}
@@ -1122,70 +1122,70 @@
 [96.260062] (-) TimerEvent: {}
 [96.361220] (-) TimerEvent: {}
 [96.462270] (-) TimerEvent: {}
-[96.546875] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/meshes/wing.dae\n'}
+[96.546875] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/meshes/wing.dae\n'}
 [96.562368] (-) TimerEvent: {}
 [96.662797] (-) TimerEvent: {}
-[96.751734] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/model.config\n'}
+[96.751734] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/model.config\n'}
 [96.762852] (-) TimerEvent: {}
 [96.863554] (-) TimerEvent: {}
 [96.964059] (-) TimerEvent: {}
-[97.023929] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/model.sdf\n'}
+[97.023929] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/model.sdf\n'}
 [97.064180] (-) TimerEvent: {}
 [97.164699] (-) TimerEvent: {}
-[97.221106] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/thumbnails\n'}
+[97.221106] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/thumbnails\n'}
 [97.264799] (-) TimerEvent: {}
-[97.294589] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/thumbnails/1.png\n'}
+[97.294589] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/thumbnails/1.png\n'}
 [97.364904] (-) TimerEvent: {}
-[97.462638] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/thumbnails/2.png\n'}
+[97.462638] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/thumbnails/2.png\n'}
 [97.464980] (-) TimerEvent: {}
 [97.565429] (-) TimerEvent: {}
-[97.617017] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/thumbnails/3.png\n'}
+[97.617017] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/thumbnails/3.png\n'}
 [97.665568] (-) TimerEvent: {}
 [97.766265] (-) TimerEvent: {}
-[97.781018] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/thumbnails/4.png\n'}
+[97.781018] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/thumbnails/4.png\n'}
 [97.866367] (-) TimerEvent: {}
 [97.967013] (-) TimerEvent: {}
-[97.975956] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/thumbnails/5.png\n'}
+[97.975956] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/sr75_zephyr_physics_backup_phase3/thumbnails/5.png\n'}
 [98.067162] (-) TimerEvent: {}
-[98.122936] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr\n'}
-[98.158254] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/materials\n'}
+[98.122936] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr\n'}
+[98.158254] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/materials\n'}
 [98.167224] (-) TimerEvent: {}
-[98.207045] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/materials/textures\n'}
-[98.245385] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/materials/textures/wing.png\n'}
+[98.207045] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/materials/textures\n'}
+[98.245385] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/materials/textures/wing.png\n'}
 [98.267369] (-) TimerEvent: {}
 [98.367877] (-) TimerEvent: {}
 [98.468881] (-) TimerEvent: {}
-[98.553406] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/meshes\n'}
+[98.553406] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/meshes\n'}
 [98.569001] (-) TimerEvent: {}
-[98.600702] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/meshes/parachute_small.dae\n'}
+[98.600702] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/meshes/parachute_small.dae\n'}
 [98.669124] (-) TimerEvent: {}
 [98.769884] (-) TimerEvent: {}
-[98.798512] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/meshes/wing.dae\n'}
+[98.798512] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/meshes/wing.dae\n'}
 [98.869995] (-) TimerEvent: {}
 [98.970625] (-) TimerEvent: {}
-[99.018471] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/model.config\n'}
+[99.018471] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/model.config\n'}
 [99.070731] (-) TimerEvent: {}
 [99.171183] (-) TimerEvent: {}
 [99.271823] (-) TimerEvent: {}
-[99.314273] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/model.sdf\n'}
+[99.314273] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/model.sdf\n'}
 [99.371963] (-) TimerEvent: {}
-[99.456551] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/thumbnails\n'}
+[99.456551] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/thumbnails\n'}
 [99.472113] (-) TimerEvent: {}
-[99.516191] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/thumbnails/1.png\n'}
+[99.516191] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/thumbnails/1.png\n'}
 [99.572137] (-) TimerEvent: {}
 [99.672584] (-) TimerEvent: {}
-[99.676788] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/thumbnails/2.png\n'}
+[99.676788] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/thumbnails/2.png\n'}
 [99.772739] (-) TimerEvent: {}
-[99.837835] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/thumbnails/3.png\n'}
+[99.837835] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/thumbnails/3.png\n'}
 [99.872825] (-) TimerEvent: {}
 [99.973357] (-) TimerEvent: {}
-[99.989365] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/thumbnails/4.png\n'}
+[99.989365] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/thumbnails/4.png\n'}
 [100.073406] (-) TimerEvent: {}
-[100.120737] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/thumbnails/5.png\n'}
+[100.120737] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr/thumbnails/5.png\n'}
 [100.173525] (-) TimerEvent: {}
-[100.264481] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr_with_ardupilot\n'}
+[100.264481] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr_with_ardupilot\n'}
 [100.273652] (-) TimerEvent: {}
-[100.307307] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr_with_ardupilot/model.config\n'}
+[100.307307] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr_with_ardupilot/model.config\n'}
 [100.373780] (-) TimerEvent: {}
 [100.474385] (-) TimerEvent: {}
 [100.575127] (-) TimerEvent: {}
@@ -1196,36 +1196,36 @@
 [101.080521] (-) TimerEvent: {}
 [101.182152] (-) TimerEvent: {}
 [101.284066] (-) TimerEvent: {}
-[101.307553] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr_with_ardupilot/model.sdf\n'}
+[101.307553] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr_with_ardupilot/model.sdf\n'}
 [101.384297] (-) TimerEvent: {}
-[101.452635] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr_with_parachute\n'}
+[101.452635] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr_with_parachute\n'}
 [101.484368] (-) TimerEvent: {}
-[101.489461] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr_with_parachute/model.config\n'}
+[101.489461] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr_with_parachute/model.config\n'}
 [101.584572] (-) TimerEvent: {}
 [101.685982] (-) TimerEvent: {}
 [101.786857] (-) TimerEvent: {}
-[101.819083] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr_with_parachute/model.sdf\n'}
+[101.819083] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/models/zephyr_with_parachute/model.sdf\n'}
 [101.886997] (-) TimerEvent: {}
-[101.969717] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/worlds\n'}
+[101.969717] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/worlds\n'}
 [101.987082] (-) TimerEvent: {}
-[102.007341] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/worlds/gimbal.sdf\n'}
+[102.007341] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/worlds/gimbal.sdf\n'}
 [102.087201] (-) TimerEvent: {}
-[102.130223] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/worlds/iris_runway.sdf\n'}
+[102.130223] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/worlds/iris_runway.sdf\n'}
 [102.187333] (-) TimerEvent: {}
 [102.288554] (-) TimerEvent: {}
-[102.358078] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/worlds/iris_warehouse.sdf\n'}
+[102.358078] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/worlds/iris_warehouse.sdf\n'}
 [102.388616] (-) TimerEvent: {}
 [102.489019] (-) TimerEvent: {}
-[102.525638] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/worlds/sr75_runway.sdf\n'}
+[102.525638] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/worlds/sr75_runway.sdf\n'}
 [102.589194] (-) TimerEvent: {}
-[102.662188] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/worlds/sr75_test_range.sdf\n'}
+[102.662188] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/worlds/sr75_test_range.sdf\n'}
 [102.689259] (-) TimerEvent: {}
-[102.782527] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/worlds/sr75_test_range_v1.sdf\n'}
+[102.782527] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/worlds/sr75_test_range_v1.sdf\n'}
 [102.789326] (-) TimerEvent: {}
 [102.889748] (-) TimerEvent: {}
-[102.919458] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/worlds/zephyr_parachute.sdf\n'}
+[102.919458] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/worlds/zephyr_parachute.sdf\n'}
 [102.989940] (-) TimerEvent: {}
-[103.066192] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/worlds/zephyr_runway.sdf\n'}
+[103.066192] (ardupilot_gazebo) StdoutLine: {'line': b'-- Installing: /mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/worlds/zephyr_runway.sdf\n'}
 [103.090048] (-) TimerEvent: {}
 [103.190697] (-) TimerEvent: {}
 [103.197241] (ardupilot_gazebo) CommandEnded: {'returncode': 0}

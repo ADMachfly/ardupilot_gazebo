@@ -270,7 +270,7 @@
 --   Found gstreamer-app-1.0, version 1.20.1
 -- Configuring done
 -- Generating done
--- Build files have been written to: /mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo
+-- Build files have been written to: /mnt/e/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo
 [ 40%] [32mBuilding CXX object CMakeFiles/CameraZoomPlugin.dir/src/CameraZoomPlugin.cc.o[0m
 [ 40%] [32mBuilding CXX object CMakeFiles/ParachutePlugin.dir/src/ParachutePlugin.cc.o[0m
 [ 60%] [32mBuilding CXX object CMakeFiles/ArduPilotPlugin.dir/src/SocketUDP.cc.o[0m

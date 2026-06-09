@@ -6,7 +6,7 @@
 [0.440s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
 [0.440s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
 [0.440s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
-[0.441s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/mnt/f/ardupilot_dev/ardupilot_gazebo'
+[0.441s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/mnt/e/ardupilot_dev/ardupilot_gazebo'
 [0.443s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
 [0.443s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
 [0.444s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
@@ -31,46 +31,46 @@
 [0.527s] Level 5:colcon.colcon_core.verb:set package 'ardupilot_gazebo' build argument 'ament_cmake_args' from command line to 'None'
 [0.528s] Level 5:colcon.colcon_core.verb:set package 'ardupilot_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
 [0.528s] Level 5:colcon.colcon_core.verb:set package 'ardupilot_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
-[0.528s] DEBUG:colcon.colcon_core.verb:Building package 'ardupilot_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/f/ardupilot_dev/ardupilot_gazebo/install', 'merge_install': True, 'path': '/mnt/f/ardupilot_dev/ardupilot_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.528s] DEBUG:colcon.colcon_core.verb:Building package 'ardupilot_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/e/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/e/ardupilot_dev/ardupilot_gazebo/install', 'merge_install': True, 'path': '/mnt/e/ardupilot_dev/ardupilot_gazebo', 'symlink_install': False, 'test_result_base': None}
 [0.528s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
 [0.529s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
-[0.529s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/mnt/f/ardupilot_dev/ardupilot_gazebo' with build type 'ament_cmake'
-[0.530s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/mnt/f/ardupilot_dev/ardupilot_gazebo'
+[0.529s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/mnt/e/ardupilot_dev/ardupilot_gazebo' with build type 'ament_cmake'
+[0.530s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/mnt/e/ardupilot_dev/ardupilot_gazebo'
 [0.534s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
 [0.534s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
 [0.534s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
-[0.799s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo': HISTTIMEFORMAT=%d/%m/%y %T /usr/bin/cmake --build /mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo -- -j20 -l20
-[14.398s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo' returned '0': HISTTIMEFORMAT=%d/%m/%y %T /usr/bin/cmake --build /mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo -- -j20 -l20
-[14.477s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo': HISTTIMEFORMAT=%d/%m/%y %T /usr/bin/cmake --install /mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo
+[0.799s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/e/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo': HISTTIMEFORMAT=%d/%m/%y %T /usr/bin/cmake --build /mnt/e/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo -- -j20 -l20
+[14.398s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/e/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo' returned '0': HISTTIMEFORMAT=%d/%m/%y %T /usr/bin/cmake --build /mnt/e/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo -- -j20 -l20
+[14.477s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/e/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo': HISTTIMEFORMAT=%d/%m/%y %T /usr/bin/cmake --install /mnt/e/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo
 [22.610s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ardupilot_gazebo)
-[22.617s] Level 1:colcon.colcon_core.environment:checking '/mnt/f/ardupilot_dev/ardupilot_gazebo/install' for CMake module files
-[22.622s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo' returned '0': HISTTIMEFORMAT=%d/%m/%y %T /usr/bin/cmake --install /mnt/f/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo
-[22.666s] Level 1:colcon.colcon_core.environment:checking '/mnt/f/ardupilot_dev/ardupilot_gazebo/install' for CMake config files
-[22.938s] Level 1:colcon.colcon_core.environment:checking '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/lib'
-[22.940s] Level 1:colcon.colcon_core.environment:checking '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/bin'
-[22.941s] Level 1:colcon.colcon_core.environment:checking '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/lib/pkgconfig/ardupilot_gazebo.pc'
-[22.944s] Level 1:colcon.colcon_core.environment:checking '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/lib/python3.10/site-packages'
-[22.946s] Level 1:colcon.colcon_core.environment:checking '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/bin'
-[22.947s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/package.ps1'
-[22.977s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/package.dsv'
-[23.007s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/package.sh'
-[23.052s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/package.bash'
-[23.096s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/package.zsh'
-[23.145s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/colcon-core/packages/ardupilot_gazebo)
+[22.617s] Level 1:colcon.colcon_core.environment:checking '/mnt/e/ardupilot_dev/ardupilot_gazebo/install' for CMake module files
+[22.622s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/e/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo' returned '0': HISTTIMEFORMAT=%d/%m/%y %T /usr/bin/cmake --install /mnt/e/ardupilot_dev/ardupilot_gazebo/build/ardupilot_gazebo
+[22.666s] Level 1:colcon.colcon_core.environment:checking '/mnt/e/ardupilot_dev/ardupilot_gazebo/install' for CMake config files
+[22.938s] Level 1:colcon.colcon_core.environment:checking '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/lib'
+[22.940s] Level 1:colcon.colcon_core.environment:checking '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/bin'
+[22.941s] Level 1:colcon.colcon_core.environment:checking '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/lib/pkgconfig/ardupilot_gazebo.pc'
+[22.944s] Level 1:colcon.colcon_core.environment:checking '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/lib/python3.10/site-packages'
+[22.946s] Level 1:colcon.colcon_core.environment:checking '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/bin'
+[22.947s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/package.ps1'
+[22.977s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/package.dsv'
+[23.007s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/package.sh'
+[23.052s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/package.bash'
+[23.096s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/package.zsh'
+[23.145s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/colcon-core/packages/ardupilot_gazebo)
 [23.262s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ardupilot_gazebo)
-[23.262s] Level 1:colcon.colcon_core.environment:checking '/mnt/f/ardupilot_dev/ardupilot_gazebo/install' for CMake module files
-[23.332s] Level 1:colcon.colcon_core.environment:checking '/mnt/f/ardupilot_dev/ardupilot_gazebo/install' for CMake config files
-[23.568s] Level 1:colcon.colcon_core.environment:checking '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/lib'
-[23.569s] Level 1:colcon.colcon_core.environment:checking '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/bin'
-[23.570s] Level 1:colcon.colcon_core.environment:checking '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/lib/pkgconfig/ardupilot_gazebo.pc'
-[23.570s] Level 1:colcon.colcon_core.environment:checking '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/lib/python3.10/site-packages'
-[23.571s] Level 1:colcon.colcon_core.environment:checking '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/bin'
-[23.572s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/package.ps1'
-[23.589s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/package.dsv'
-[23.677s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/package.sh'
-[23.707s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/package.bash'
-[23.735s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/package.zsh'
-[23.764s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/f/ardupilot_dev/ardupilot_gazebo/install/share/colcon-core/packages/ardupilot_gazebo)
+[23.262s] Level 1:colcon.colcon_core.environment:checking '/mnt/e/ardupilot_dev/ardupilot_gazebo/install' for CMake module files
+[23.332s] Level 1:colcon.colcon_core.environment:checking '/mnt/e/ardupilot_dev/ardupilot_gazebo/install' for CMake config files
+[23.568s] Level 1:colcon.colcon_core.environment:checking '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/lib'
+[23.569s] Level 1:colcon.colcon_core.environment:checking '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/bin'
+[23.570s] Level 1:colcon.colcon_core.environment:checking '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/lib/pkgconfig/ardupilot_gazebo.pc'
+[23.570s] Level 1:colcon.colcon_core.environment:checking '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/lib/python3.10/site-packages'
+[23.571s] Level 1:colcon.colcon_core.environment:checking '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/bin'
+[23.572s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/package.ps1'
+[23.589s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/package.dsv'
+[23.677s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/package.sh'
+[23.707s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/package.bash'
+[23.735s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/ardupilot_gazebo/package.zsh'
+[23.764s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/e/ardupilot_dev/ardupilot_gazebo/install/share/colcon-core/packages/ardupilot_gazebo)
 [23.841s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
 [23.842s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
 [23.842s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
@@ -81,13 +81,13 @@
 [23.994s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
 [23.994s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
 [23.994s] DEBUG:colcon.colcon_core.event_reactor:joined thread
-[23.995s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/local_setup.ps1'
-[24.020s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/_local_setup_util_ps1.py'
-[24.047s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/setup.ps1'
-[24.086s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/local_setup.sh'
-[24.117s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/_local_setup_util_sh.py'
-[24.153s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/setup.sh'
-[24.186s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/local_setup.bash'
-[24.213s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/setup.bash'
-[24.261s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/local_setup.zsh'
-[24.316s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/f/ardupilot_dev/ardupilot_gazebo/install/setup.zsh'
+[23.995s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/local_setup.ps1'
+[24.020s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/_local_setup_util_ps1.py'
+[24.047s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/setup.ps1'
+[24.086s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/local_setup.sh'
+[24.117s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/_local_setup_util_sh.py'
+[24.153s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/setup.sh'
+[24.186s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/local_setup.bash'
+[24.213s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/setup.bash'
+[24.261s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/local_setup.zsh'
+[24.316s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/e/ardupilot_dev/ardupilot_gazebo/install/setup.zsh'

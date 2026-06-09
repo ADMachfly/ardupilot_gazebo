@@ -5,87 +5,65 @@
       <uri>model://sr75_zephyr_physics</uri>
     </include>
 
-    <!-- SR-75 main wing / body aerodynamic approximation -->
+    <!-- SR-75 Gazebo-stable main wing / body aerodynamic approximation -->
     <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
-
-      <!-- From MATLAB aero model:
-          CL0 = 0.0221, CLa = 2.308
-          zero-lift alpha a0 = -CL0 / CLa ≈ -0.0096 rad -->
-      <a0>-0.04</a0>
-      <cla>5.0</cla>
-
-      <!-- SR-75 ArduPilot aero reference: c_drag_p = 0.04 -->
-      <cda>0.04</cda>
-
-      <!-- SR-75 ArduPilot aero reference: c_m_a = -0.5 -->
-      <cma>-0.5</cma>
-
-      <!-- Starting stall angle; can tune later -->
-      <alpha_stall>0.20</alpha_stall>
-      <cla_stall>-1.5</cla_stall>
-      <cda_stall>1.0</cda_stall>
-      <cma_stall>-0.5</cma_stall>
-
-      <!-- Keep Zephyr coordinate convention for now -->
-      <cp>0 0.20 0</cp>
-
-      <!-- Total S = 1.36 m2. Main wing/body gets most of area. -->
-      <area>1.00</area>
-      <air_density>1.225</air_density>
+      <a0>0.13</a0>
+      <cla>3.7</cla>
+      <cda>0.06417112299</cda>
+      <cma>0.0</cma>
+      <alpha_stall>0.3391428111</alpha_stall>
+      <cla_stall>-3.85</cla_stall>
+      <cda_stall>-0.9233984055</cda_stall>
+      <cma_stall>0.0</cma_stall>
+      <cp>0 -0.10 0</cp>
+      <area>0.50</area>
+      <air_density>1.2041</air_density>
 
       <forward>0 -1 0</forward>
       <upward>0 0 1</upward>
       <link_name>zephyr::wing</link_name>
     </plugin>
 
-    <!-- left_wing: symmetric to right_wing using SR-75 MATLAB aero params -->
+    <!-- left elevon panel -->
     <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
-      <a0>-0.04</a0>
-      <cla>5.0</cla>
-      <cda>0.04</cda>
-      <cma>-0.2</cma>
-      <alpha_stall>0.20</alpha_stall>
-      <cla_stall>-1.5</cla_stall>
-      <cda_stall>1.0</cda_stall>
-      <cma_stall>-0.5</cma_stall>
-      <cp>0.55 0.45 0</cp>
-      <area>0.18</area>
-      <air_density>1.225</air_density>
+      <a0>0.15</a0>
+      <cla>6.8</cla>
+      <cda>0.06417112299</cda>
+      <cma>0.0</cma>
+      <alpha_stall>0.6391428111</alpha_stall>
+      <cla_stall>-3.85</cla_stall>
+      <cda_stall>-0.9233984055</cda_stall>
+      <cma_stall>0.0</cma_stall>
+      <cp>0.7 0.20 0</cp>
+      <area>0.10</area>
+      <air_density>1.2041</air_density>
       <forward>0 -1 0</forward>
       <upward>0 0 1</upward>
       <link_name>zephyr::wing</link_name>
       <control_joint_name>zephyr::flap_left_joint</control_joint_name>
-      <control_joint_rad_to_cl>0.45</control_joint_rad_to_cl>
+      <control_joint_rad_to_cl>-5.0</control_joint_rad_to_cl>
     </plugin>
-    <!-- right_wing -->
-    <!-- SR-75 right elevon aerodynamic approximation -->
+    <!-- right elevon panel -->
     <plugin filename="gz-sim-lift-drag-system"
         name="gz::sim::systems::LiftDrag">
-
-      <a0>-0.04</a0>
-      <cla>5.0</cla>
-      <cda>0.04</cda>
-      <cma>-0.2</cma>
-
-      <alpha_stall>0.20</alpha_stall>
-      <cla_stall>-1.5</cla_stall>
-      <cda_stall>1.0</cda_stall>
-      <cma_stall>-0.5</cma_stall>
-
-      <cp>-0.55 0.45 0</cp>
-      <area>0.18</area>
-      <air_density>1.225</air_density>
-
+      <a0>0.15</a0>
+      <cla>6.8</cla>
+      <cda>0.06417112299</cda>
+      <cma>0.0</cma>
+      <alpha_stall>0.6391428111</alpha_stall>
+      <cla_stall>-3.85</cla_stall>
+      <cda_stall>-0.9233984055</cda_stall>
+      <cma_stall>0.0</cma_stall>
+      <cp>-0.7 0.20 0</cp>
+      <area>0.10</area>
+      <air_density>1.2041</air_density>
       <forward>0 -1 0</forward>
       <upward>0 0 1</upward>
       <link_name>zephyr::wing</link_name>
-
       <control_joint_name>zephyr::flap_right_joint</control_joint_name>
-
-      <!-- MATLAB CLde = 0.45. Use negative sign to match current Zephyr convention. -->
-      <control_joint_rad_to_cl>0.45</control_joint_rad_to_cl>
+      <control_joint_rad_to_cl>-5.0</control_joint_rad_to_cl>
     </plugin>
 
     <!-- left_rudder -->
