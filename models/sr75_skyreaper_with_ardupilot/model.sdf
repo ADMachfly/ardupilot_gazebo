@@ -10,11 +10,11 @@
         name="gz::sim::systems::LiftDrag">
       <a0>0.13</a0>
       <cla>3.7</cla>
-      <cda>0.06417112299</cda>
+      <cda>0.12</cda>
       <cma>0.0</cma>
       <alpha_stall>0.3391428111</alpha_stall>
       <cla_stall>-3.85</cla_stall>
-      <cda_stall>-0.9233984055</cda_stall>
+      <cda_stall>1.0</cda_stall>
       <cma_stall>0.0</cma_stall>
       <cp>0 -0.10 0</cp>
       <area>0.50</area>
@@ -30,11 +30,11 @@
         name="gz::sim::systems::LiftDrag">
       <a0>0.15</a0>
       <cla>6.8</cla>
-      <cda>0.06417112299</cda>
+      <cda>0.12</cda>
       <cma>0.0</cma>
       <alpha_stall>0.6391428111</alpha_stall>
       <cla_stall>-3.85</cla_stall>
-      <cda_stall>-0.9233984055</cda_stall>
+      <cda_stall>1</cda_stall>
       <cma_stall>0.0</cma_stall>
       <cp>0.7 0.20 0</cp>
       <area>0.10</area>
@@ -50,11 +50,11 @@
         name="gz::sim::systems::LiftDrag">
       <a0>0.15</a0>
       <cla>6.8</cla>
-      <cda>0.06417112299</cda>
+      <cda>0.12</cda>
       <cma>0.0</cma>
       <alpha_stall>0.6391428111</alpha_stall>
       <cla_stall>-3.85</cla_stall>
-      <cda_stall>-0.9233984055</cda_stall>
+      <cda_stall>1.0</cda_stall>
       <cma_stall>0.0</cma_stall>
       <cp>-0.7 0.20 0</cp>
       <area>0.10</area>
@@ -75,7 +75,7 @@
       <cma>0.0</cma>
       <alpha_stall>0.3391428111</alpha_stall>
       <cla_stall>-3.85</cla_stall>
-      <cda_stall>-0.9233984055</cda_stall>
+      <cda_stall>1.0</cda_stall>
       <cma_stall>0.0</cma_stall>
       <cp>0.76 0.30 0.025</cp>
       <area>0.12</area>
@@ -93,7 +93,7 @@
       <cma>0.0</cma>
       <alpha_stall>0.3391428111</alpha_stall>
       <cla_stall>-3.85</cla_stall>
-      <cda_stall>-0.9233984055</cda_stall>
+      <cda_stall>1.0</cda_stall>
       <cma_stall>0.0</cma_stall>
       <cp>-0.76 0.30 0.025</cp>
       <area>0.12</area>
@@ -225,7 +225,7 @@
 
       <!-- SR-75 twin-jet rated thrust: 800 N total (2 × 400 N engines).
            Was 400 N (T/W=0.49) which could not sustain climb at low speed. -->
-        <maxForce>800</maxForce>
+        <maxForce>250</maxForce>
 
         <servo_min>1100</servo_min>
         <servo_max>1900</servo_max>
