@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<sdf version="1.9">
+  <model name="launcher_sr75">
+    <static>true</static>
+
+    <link name="launcher_link">
+      <visual name="launcher_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://launcher_sr75/meshes/Launcher.glb</uri>
+            <scale>0.1 0.1 0.1</scale>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <collision name="launcher_collision">
+        <pose>-0.0021 2.3061 0.1167 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.7399 2.8904 0.846</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>
