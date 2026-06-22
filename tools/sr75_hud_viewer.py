@@ -12,6 +12,10 @@ DEFAULT_WIDTH = 1280
 DEFAULT_HEIGHT = 720
 DEFAULT_RATE = 30.0
 DEFAULT_BACKGROUND = "synthetic"
+DEFAULT_IMAGE_FILE = "/tmp/sr75_chase_camera.ppm"
+HUD_MARGIN = 18
+PANEL_FONT_SCALE = 0.52
+PANEL_LINE_HEIGHT = 22
 
 
 def parse_args():
@@ -43,7 +47,7 @@ def parse_args():
     )
     parser.add_argument(
         "--background",
-        choices=("synthetic", "gazebo"),
+        choices=("synthetic", "gazebo", "image-file"),
         default=DEFAULT_BACKGROUND,
         help=f"HUD background source. Default: {DEFAULT_BACKGROUND}",
     )
@@ -51,6 +55,11 @@ def parse_args():
         "--gazebo-image-topic",
         default=None,
         help="Gazebo image topic for camera-backed HUD backgrounds.",
+    )
+    parser.add_argument(
+        "--image-file",
+        default=DEFAULT_IMAGE_FILE,
+        help=f"Image file for file-backed HUD backgrounds. Default: {DEFAULT_IMAGE_FILE}",
     )
     return parser.parse_args()
 
@@ -82,6 +91,23 @@ def format_value(value, fmt, fallback="--"):
     if value is None:
         return fallback
     return format(value, fmt)
+
+
+def shorten_camera_label(label):
+    if label == "CAM synthetic":
+        return label
+    if not label.startswith("CAM "):
+        return label
+
+    path = label[4:]
+    trimmed = path.rstrip("/").split("/")[-1]
+    if not trimmed:
+        return "CAM image"
+    if "." in trimmed:
+        return f"CAM {trimmed}"
+    if "_" in trimmed:
+        return f"CAM {trimmed}"
+    return f"CAM {trimmed[:24]}"
 
 
 class TelemetryState:
@@ -170,9 +196,32 @@ class GazeboBackgroundSource(BackgroundSource):
         return synthetic_background(np, width, height)
 
 
+class ImageFileBackgroundSource(BackgroundSource):
+    def __init__(self, image_file):
+        super().__init__("image-file")
+        self.image_file = image_file
+        self.label = f"CAM {image_file}"
+        self._warned = False
+
+    def get_frame(self, cv2, np, width, height):
+        frame = cv2.imread(self.image_file, cv2.IMREAD_COLOR)
+        if frame is None:
+            if not self._warned:
+                print(
+                    f"Image file background requested, but {self.image_file} is missing "
+                    "or unreadable. Falling back to synthetic background.",
+                    flush=True,
+                )
+                self._warned = True
+            return synthetic_background(np, width, height)
+        return cv2.resize(frame, (width, height), interpolation=cv2.INTER_LINEAR)
+
+
 def make_background_source(args):
     if args.background == "synthetic":
         return SyntheticBackgroundSource()
+    if args.background == "image-file":
+        return ImageFileBackgroundSource(args.image_file)
     return GazeboBackgroundSource(args.gazebo_image_topic)
 
 
@@ -334,11 +383,23 @@ def np_points(*points):
     return np.array(points, dtype=np.int32)
 
 
-def draw_text_block(cv2, frame, lines, x, y, color, align_right=False):
-    line_height = 32
+def draw_text_block(
+    cv2,
+    frame,
+    lines,
+    x,
+    y,
+    color,
+    align_right=False,
+    font_scale=0.72,
+    thickness=2,
+    line_height=32,
+):
     for index, line in enumerate(lines):
         if align_right:
-            size, _ = cv2.getTextSize(line, cv2.FONT_HERSHEY_SIMPLEX, 0.72, 2)
+            size, _ = cv2.getTextSize(
+                line, cv2.FONT_HERSHEY_SIMPLEX, font_scale, thickness
+            )
             x_pos = x - size[0]
         else:
             x_pos = x
@@ -348,21 +409,45 @@ def draw_text_block(cv2, frame, lines, x, y, color, align_right=False):
             line,
             (x_pos, y_pos),
             cv2.FONT_HERSHEY_SIMPLEX,
-            0.72,
+            font_scale,
             color,
-            2,
+            thickness,
             cv2.LINE_AA,
         )
 
 
-def draw_status_bar(cv2, frame, state, width, height, color):
+def draw_status_bar(cv2, frame, state, width, height, color, background_source):
     top_lines = [
         f"MODE {state.flight_mode}",
         f"HDG {format_value(state.heading_deg, '.1f')}",
         f"AOA {format_value(state.aoa_deg, '.1f')}",
         f"BAT {format_value(state.battery_percent, '.0f')}%",
+        shorten_camera_label(background_source.label),
     ]
-    draw_text_block(cv2, frame, top_lines, 24, 36, color)
+    panel_x = HUD_MARGIN
+    panel_y = 24
+    panel_w = 342
+    panel_h = 126
+    panel_text_x = panel_x + 12
+    panel_text_y = panel_y + 20
+    cv2.rectangle(
+        frame,
+        (panel_x, panel_y),
+        (panel_x + panel_w, panel_y + panel_h),
+        color,
+        1,
+    )
+    draw_text_block(
+        cv2,
+        frame,
+        top_lines,
+        panel_text_x,
+        panel_text_y,
+        color,
+        font_scale=PANEL_FONT_SCALE,
+        thickness=1,
+        line_height=PANEL_LINE_HEIGHT,
+    )
 
     left_lines = [
         f"ROLL {math.degrees(state.roll_rad):.1f} deg",
@@ -370,7 +455,17 @@ def draw_status_bar(cv2, frame, state, width, height, color):
         f"N {format_value(state.local_north, '.1f')} m",
         f"E {format_value(state.local_east, '.1f')} m",
     ]
-    draw_text_block(cv2, frame, left_lines, 24, height - 112, color)
+    draw_text_block(
+        cv2,
+        frame,
+        left_lines,
+        HUD_MARGIN,
+        height - 106,
+        color,
+        font_scale=0.66,
+        thickness=2,
+        line_height=28,
+    )
 
     right_lines = [
         f"SPD {format_value(state.airspeed, '.1f')} m/s",
@@ -378,7 +473,18 @@ def draw_status_bar(cv2, frame, state, width, height, color):
         f"CLB {format_value(state.climb_rate, '.1f')} m/s",
         f"THR {format_value(state.throttle, '.0f')}%",
     ]
-    draw_text_block(cv2, frame, right_lines, width - 24, height - 112, color, align_right=True)
+    draw_text_block(
+        cv2,
+        frame,
+        right_lines,
+        width - HUD_MARGIN,
+        height - 106,
+        color,
+        align_right=True,
+        font_scale=0.72,
+        thickness=2,
+        line_height=32,
+    )
 
 
 def draw_heading_tape(cv2, frame, heading_deg, width, color):
@@ -386,7 +492,7 @@ def draw_heading_tape(cv2, frame, heading_deg, width, color):
         heading_deg = 0.0
 
     center_x = width // 2
-    top_y = 64
+    top_y = 58
     span_px = 420
     px_per_deg = 6
     cv2.line(frame, (center_x - span_px, top_y), (center_x + span_px, top_y), color, 1, cv2.LINE_AA)
@@ -400,7 +506,7 @@ def draw_heading_tape(cv2, frame, heading_deg, width, color):
             cv2.putText(
                 frame,
                 label,
-                (x - 18, top_y + 34),
+                (x - 18, top_y + 30),
                 cv2.FONT_HERSHEY_SIMPLEX,
                 0.45,
                 color,
@@ -408,11 +514,11 @@ def draw_heading_tape(cv2, frame, heading_deg, width, color):
                 cv2.LINE_AA,
             )
 
-    cv2.rectangle(frame, (center_x - 34, 10), (center_x + 34, 42), color, 1)
+    cv2.rectangle(frame, (center_x - 34, 12), (center_x + 34, 40), color, 1)
     cv2.putText(
         frame,
         f"{int(normalize_heading_deg(heading_deg)):03d}",
-        (center_x - 24, 34),
+        (center_x - 24, 33),
         cv2.FONT_HERSHEY_SIMPLEX,
         0.7,
         color,
@@ -450,7 +556,7 @@ def render_hud(cv2, np, state, width, height, background_source):
     draw_center_crosshair(cv2, frame, center_x, center_y, hud_color)
     draw_roll_scale(cv2, frame, state, width, height, hud_color)
     draw_heading_tape(cv2, frame, state.heading_deg, width, hud_color)
-    draw_status_bar(cv2, frame, state, width, height, hud_color)
+    draw_status_bar(cv2, frame, state, width, height, hud_color, background_source)
     draw_rate_marker(cv2, frame, state.climb_rate, "V/S", width - 90, 180, 220, hud_color)
     draw_rate_marker(cv2, frame, state.aoa_deg, "AOA", 90, 180, 220, hud_color)
 
@@ -461,19 +567,7 @@ def render_hud(cv2, np, state, width, height, background_source):
     cv2.putText(
         frame,
         status_text,
-        (width - 190, 36),
-        cv2.FONT_HERSHEY_SIMPLEX,
-        0.6,
-        hud_color,
-        2,
-        cv2.LINE_AA,
-    )
-    cv2.putText(
-        frame,
-        background_source.label if background_source.mode == "gazebo" and background_source._latest_frame is not None else (
-            f"CAM {background_source.topic}" if background_source.mode == "gazebo" and background_source.topic else "CAM synthetic"
-        ),
-        (24, 72),
+        (width - 190, 32),
         cv2.FONT_HERSHEY_SIMPLEX,
         0.6,
         hud_color,
@@ -507,8 +601,8 @@ def main():
     print(f"  Rate:    {args.rate:g} Hz", flush=True)
     print(f"  Background: {args.background}", flush=True)
     print(
-        "  Camera topic: "
-        f"{args.gazebo_image_topic if args.gazebo_image_topic else 'synthetic'}",
+        "  Background source: "
+        f"{args.gazebo_image_topic if args.background == 'gazebo' else (args.image_file if args.background == 'image-file' else 'synthetic')}",
         flush=True,
     )
     print("Press q or Esc to close the HUD window.", flush=True)

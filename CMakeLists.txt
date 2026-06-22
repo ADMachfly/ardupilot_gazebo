@@ -84,6 +84,8 @@ endif()
 # --------------------------------------------------------------------------- #
 find_package(RapidJSON REQUIRED)
 find_package(OpenCV REQUIRED)
+gz_find_package(gz-msgs10 REQUIRED)
+gz_find_package(gz-transport13 REQUIRED)
 
 pkg_check_modules(GST REQUIRED gstreamer-1.0 gstreamer-app-1.0)
 
@@ -143,6 +145,14 @@ target_link_libraries(GstCameraPlugin PRIVATE
   ${GST_LINK_LIBRARIES}
 )
 
+add_executable(sr75_gz_image_to_ppm
+  tools/sr75_gz_image_to_ppm.cpp
+)
+target_link_libraries(sr75_gz_image_to_ppm PRIVATE
+  gz-msgs10::gz-msgs10
+  gz-transport13::gz-transport13
+)
+
 # --------------------------------------------------------------------------- #
 # Install.
 
@@ -152,6 +162,7 @@ install(
   ParachutePlugin
   CameraZoomPlugin
   GstCameraPlugin
+  sr75_gz_image_to_ppm
   DESTINATION lib/${PROJECT_NAME}
 )
 
