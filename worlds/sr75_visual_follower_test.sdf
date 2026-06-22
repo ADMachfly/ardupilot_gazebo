@@ -47,10 +47,22 @@
       </link>
     </model>
 
-<include>
-  <uri>model://sr75_launch_stack_visual_follower</uri>
-  <pose>0 0 0.55 1.5708 0 0</pose>
-</include>
+    <!--
+    <include>
+      <uri>model://sr75_launch_stack_visual_follower</uri>
+      <pose>0 0 0.55 1.5708 0 0</pose>
+    </include>
+    -->
+
+    <include>
+      <uri>model://sr75_launcher_static</uri>
+      <pose>0 0 0.55 1.5708 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://sr75_uav_visual_follower</uri>
+      <pose>0 0 0.55 1.5708 0 0</pose>
+    </include>
 
   </world>
 </sdf>
