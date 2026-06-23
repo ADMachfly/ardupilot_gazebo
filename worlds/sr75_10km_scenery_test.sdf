@@ -1,0 +1,65 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <world name="sr75_10km_scenery_test">
+
+    <plugin filename="gz-sim-physics-system"
+            name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-scene-broadcaster-system"
+            name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-sensors-system"
+            name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+
+    <light name="sun" type="directional">
+      <pose>0 0 1000 0 0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <direction>-0.5 0.5 -1</direction>
+    </light>
+
+    <!-- Terrain only; launcher and aircraft stack remain unchanged. -->
+    <include>
+      <uri>model://sr75_terrain_10km</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://sr75_launcher_static</uri>
+      <pose>0 0 1.0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://sr75_uav_visual_follower</uri>
+      <pose>0 0 3.0 1.5708 0 0</pose>
+    </include>
+
+
+    <model name="sr75_origin_marker">
+      <static>true</static>
+      <pose>0 0 20 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>100 100 40</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+
+    <gui fullscreen="0">
+      <camera name="user_camera">
+        <pose>0 -9000 3500 1.2 0 0</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+
+  </world>
+</sdf>
