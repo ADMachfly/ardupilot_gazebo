@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <world name="sr75_f22_detachable_launch_test">
+
+    <plugin filename="gz-sim-physics-system"
+            name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-scene-broadcaster-system"
+            name="gz::sim::systems::SceneBroadcaster"/>
+    <!-- ApplyLinkWrench is used by the F22-GZ test scripts to apply the
+         5800N RATO-equivalent thrust; it is not required for normal
+         (non-test) use of this world. -->
+    <plugin filename="gz-sim-apply-link-wrench-system"
+            name="gz::sim::systems::ApplyLinkWrench"/>
+
+    <light name="sun" type="directional">
+      <pose>0 0 10 0 0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <direction>-0.5 0.5 -1</direction>
+    </light>
+
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- F22-GZ-J: both models spawn at the identical rail-axis pose
+         (roll=90deg, pitch=70deg, yaw=135deg), which points the rail's
+         local-Y axis at exactly elevation=20deg / azimuth=315deg in
+         world frame (solved in F22-GZ-E, unchanged here). The UAV
+         (sr75_uav_release) starts exactly coincident with the launcher's
+         rail carriage; the DetachableJoint declared in
+         sr75_launcher_carriage then rigidly locks them together at that
+         zero relative offset. -->
+    <include>
+      <uri>model://sr75_launcher_carriage</uri>
+      <pose>0 0 1.4 1.5708 1.22173 2.35619</pose>
+    </include>
+
+    <include>
+      <uri>model://sr75_uav_release</uri>
+      <pose>0 0 1.4 1.5708 1.22173 2.35619</pose>
+    </include>
+
+  </world>
+</sdf>

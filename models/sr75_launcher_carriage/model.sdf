@@ -1,0 +1,106 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <model name="sr75_launcher_carriage">
+
+    <static>false</static>
+
+    <!-- Launcher mesh -->
+    <link name="launcher_link">
+      <pose>0 0 0 0 0 0</pose>
+
+      <inertial>
+        <mass>200</mass>
+        <inertia>
+          <ixx>50</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>50</iyy>
+          <iyz>0</iyz>
+          <izz>50</izz>
+        </inertia>
+      </inertial>
+
+      <collision name="launcher_rail_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.75 2.90 0.12</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <visual name="launcher_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://sr75_launch_stack_with_controls/meshes/SR75_LAUNCHER.obj</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <joint name="launcher_world_joint" type="fixed">
+      <parent>world</parent>
+      <child>launcher_link</child>
+    </joint>
+
+    <!-- F22-GZ-J: rail_carriage_link is a small, low-mass body that rides
+         the rail via the prismatic joint. It carries no visual/collision
+         of its own (the launcher visual mesh already represents the
+         rail); its only job is to be the DetachableJoint's parent_link,
+         so the separate UAV model (sr75_uav_release) can be rigidly
+         attached to it pre-launch and cleanly detached at release. -->
+    <link name="rail_carriage_link">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <mass>2.0</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+    </link>
+
+    <!-- Rail axis is local Y. Limit +-1.45m = half of the 2.90m rail.
+         Friction=600N is the prelaunch lock: above the ~310N along-rail
+         gravity component at 92.5kg/20deg elevation (no drift), well
+         below the 5800N RATO force (releases immediately on ignition).
+         Damping=50 is a small numerical stabilizer, not a lock. -->
+    <joint name="rail_slider_joint" type="prismatic">
+      <parent>launcher_link</parent>
+      <child>rail_carriage_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1.45</lower>
+          <upper>1.45</upper>
+        </limit>
+        <dynamics>
+          <friction>600</friction>
+          <damping>50</damping>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <!-- Native DetachableJoint: rigidly attaches sr75_uav_release::wing to
+         rail_carriage_link at load, detachable at runtime via
+         /sr75_launcher_carriage/release/detach. This is the mechanism
+         that lets the UAV be released cleanly before the rail's hard
+         travel limit, instead of trying (and failing, see F22-GZ-G) to
+         runtime-delete the prismatic joint itself. -->
+    <plugin filename="gz-sim-detachable-joint-system"
+            name="gz::sim::systems::DetachableJoint">
+      <parent_link>rail_carriage_link</parent_link>
+      <child_model>sr75_uav_release</child_model>
+      <child_link>wing</child_link>
+      <detach_topic>/sr75_launcher_carriage/release/detach</detach_topic>
+      <output_topic>/sr75_launcher_carriage/release/state</output_topic>
+    </plugin>
+
+  </model>
+</sdf>
