@@ -1,12 +1,17 @@
-"""F22-GZ-J: Gazebo-only rail-launch + detachable-release test.
+"""F22-GZ-J/Q: Gazebo-only rail-launch + detachable-release test.
 
 Exercises the tracked sr75_launcher_carriage / sr75_uav_release two-model
 launcher (worlds/sr75_f22_detachable_launch_test.sdf): confirms prelaunch
 rail stability at the intended 20deg elevation / 315deg azimuth, applies a
 5800N/3s RATO-equivalent thrust along the rail axis via ApplyLinkWrench,
 and releases the UAV from the rail carriage via its native DetachableJoint
-once along-rail travel reaches the 1.00-1.20m target window (well short of
-the rail's 1.45m hard travel limit).
+once along-rail travel reaches the 17.0-17.3m target window (well short of
+the rail's 17.5m hard travel limit). F22-GZ-Q promoted the rail from its
+original 2.90m/short-rail form (0.0-1.2m target) to this longer, low-loss
+(friction=0, damping=1, hard-limit prelaunch latch) form, needed to reach
+a controllable ~43-45 m/s release speed instead of the short rail's
+~9.6-35.9 m/s depending on the joint tuning used at the time (see
+F22-GZ-M/N/O for the speed-envelope and mechanism history).
 
 Usage (with the world already running, e.g.:
   GZ_SIM_RESOURCE_PATH=<repo>/models:<repo>/worlds \
@@ -35,7 +40,7 @@ DETACH_TOPIC = "/sr75_launcher_carriage/release/detach"
 RAIL_AXIS = (-0.66446302, 0.66446302, 0.34202014)
 FORCE_N = 5800.0
 FX, FY, FZ = (RAIL_AXIS[0] * FORCE_N, RAIL_AXIS[1] * FORCE_N, RAIL_AXIS[2] * FORCE_N)
-DETACH_MIN, DETACH_MAX = 1.00, 1.20
+DETACH_MIN, DETACH_MAX = 17.0, 17.3
 
 node = gzt.Node()
 wrench_pub = node.advertise(f"/world/{WORLD}/wrench/persistent", entity_wrench_pb2.EntityWrench)
@@ -46,7 +51,7 @@ state = {
     "x0": None, "y0": None, "z0": None,
     "detached": False,
     "detach_wall_t": None, "detach_along": None, "detach_cross": None,
-    "detach_speed": None, "detach_rpy": None,
+    "detach_speed": None, "detach_rpy": None, "release_state": None,
     "force_start": None,
     "prev": None,
     "rows": [],
@@ -96,12 +101,14 @@ def on_pose(msg):
         roll, pitch, yaw = quat_to_rpy(uav.orientation.x, uav.orientation.y, uav.orientation.z, uav.orientation.w)
 
         speed = None
+        vel = None  # (vx, vy, vz) world-frame finite-difference velocity
         prev = state["prev"]
         if prev is not None:
             pt, px, py, pz = prev
             dt = t - pt
             if dt > 1e-6:
-                speed = math.sqrt((x - px) ** 2 + (y - py) ** 2 + (z - pz) ** 2) / dt
+                vel = ((x - px) / dt, (y - py) / dt, (z - pz) / dt)
+                speed = math.sqrt(sum(c * c for c in vel))
         state["prev"] = (t, x, y, z)
 
         wall_dt = time.time() - state["force_start"]
@@ -118,7 +125,27 @@ def on_pose(msg):
             state["detach_cross"] = cross
             state["detach_speed"] = speed
             state["detach_rpy"] = (math.degrees(roll), math.degrees(pitch), math.degrees(yaw))
+            # Full release-state export for JSBSim/ArduPilot handoff
+            # (F22-GZ-K). p/q/r are NOT measured here: this world has no
+            # IMU/angular-velocity topic, and no angular-rate estimate was
+            # added since that would mean touching the launcher/world SDF
+            # (out of scope). They are inferable as exactly 0 at this
+            # instant from the joint structure itself: the prismatic +
+            # DetachableJoint chain permits zero relative rotation until
+            # the detach message is processed, so there is no rotational
+            # DOF, and therefore no angular rate, before this sample.
+            state["release_state"] = {
+                "sim_time_s": t,
+                "world_position_m": (x, y, z),
+                "world_velocity_mps": vel,
+                "quaternion_xyzw": (uav.orientation.x, uav.orientation.y, uav.orientation.z, uav.orientation.w),
+                "rpy_deg": (math.degrees(roll), math.degrees(pitch), math.degrees(yaw)),
+                "angular_rates_rad_s": None,  # not measured; see comment above
+                "rail_axis_unit_vector": RAIL_AXIS,
+                "release_speed_mps": speed,
+            }
             print(f"DETACH_FIRED wall_dt={wall_dt:.4f} along={along:.4f} speed={speed} sample_count={state['sample_count']}")
+            print("RELEASE_STATE", state["release_state"])
 
 
 def main():
@@ -154,6 +181,7 @@ def main():
         detach_cross = state["detach_cross"]
         detach_speed = state["detach_speed"]
         detach_rpy = state["detach_rpy"]
+        release_state = state["release_state"]
         total_samples = state["sample_count"]
 
     print("total pose samples received:", total_samples)
@@ -165,6 +193,7 @@ def main():
 
     print("DETACH_T", detach_wall_t, "DETACH_ALONG", detach_along, "DETACH_CROSS", detach_cross,
           "DETACH_SPEED", detach_speed, "DETACH_RPY", detach_rpy)
+    print("RELEASE_STATE (final)", release_state)
 
 
 if __name__ == "__main__":

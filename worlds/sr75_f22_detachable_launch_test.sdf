@@ -25,7 +25,7 @@
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>100 100</size>
+              <size>200 200</size>
             </plane>
           </geometry>
         </collision>
@@ -39,15 +39,20 @@
          (sr75_uav_release) starts exactly coincident with the launcher's
          rail carriage; the DetachableJoint declared in
          sr75_launcher_carriage then rigidly locks them together at that
-         zero relative offset. -->
+         zero relative offset.
+
+         F22-GZ-Q: spawn height raised 1.4 -> 20m (and ground_plane
+         widened 100 -> 200) since the promoted rail now travels a full
+         17.5m along a direction with a positive world-Z component; the
+         higher spawn keeps the whole travel clear of the ground plane. -->
     <include>
       <uri>model://sr75_launcher_carriage</uri>
-      <pose>0 0 1.4 1.5708 1.22173 2.35619</pose>
+      <pose>0 0 20 1.5708 1.22173 2.35619</pose>
     </include>
 
     <include>
       <uri>model://sr75_uav_release</uri>
-      <pose>0 0 1.4 1.5708 1.22173 2.35619</pose>
+      <pose>0 0 20 1.5708 1.22173 2.35619</pose>
     </include>
 
   </world>

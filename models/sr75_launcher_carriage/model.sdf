@@ -66,23 +66,40 @@
       </inertial>
     </link>
 
-    <!-- Rail axis is local Y. Limit +-1.45m = half of the 2.90m rail.
-         Friction=600N is the prelaunch lock: above the ~310N along-rail
-         gravity component at 92.5kg/20deg elevation (no drift), well
-         below the 5800N RATO force (releases immediately on ignition).
-         Damping=50 is a small numerical stabilizer, not a lock. -->
+    <!-- F22-GZ-Q: promotes the F22-GZ-O low-loss long-rail mechanism.
+         Rail axis is local Y, extended from the original 2.90m (+-1.45m,
+         20deg elevation) to a 17.5m one-directional travel, needed to
+         reach a controllable release speed (F22-GZ-M found 30 m/s still
+         diverges, 45 m/s comfortably stable).
+
+         The prelaunch lock and the in-flight rail resistance used to be
+         the same friction/damping pair (F22-GZ-F..N); that conflated two
+         different jobs: damping is velocity-proportional, so a value
+         negligible at low speed becomes a large drag at higher speed
+         (F22-GZ-N: friction=600/damping=50 gave only 35.87 m/s against a
+         45 m/s target at 17.06m, a ~20% shortfall). F22-GZ-O separated
+         them: the prelaunch lock is now the joint's own LOWER LIMIT
+         (lower=0.0), a hard mechanical stop the carriage's rest position
+         sits exactly against; gravity's along-rail component just
+         pushes it into the stop, no friction needed. With the stop doing
+         the holding, friction=0 and damping=1 (negligible: ~45N at
+         release speed vs 5800N thrust, kept only as a mild numerical
+         stabilizer) give a genuinely low-loss rail. Measured result:
+         release at along=17.059m, speed=43.85 m/s (predicted ~45.01 m/s
+         analytically; the ~2.6% shortfall is the residual damping=1
+         term), cross drift ~0.00013m, attitude unchanged at release. -->
     <joint name="rail_slider_joint" type="prismatic">
       <parent>launcher_link</parent>
       <child>rail_carriage_link</child>
       <axis>
         <xyz>0 1 0</xyz>
         <limit>
-          <lower>-1.45</lower>
-          <upper>1.45</upper>
+          <lower>0.0</lower>
+          <upper>17.5</upper>
         </limit>
         <dynamics>
-          <friction>600</friction>
-          <damping>50</damping>
+          <friction>0</friction>
+          <damping>1</damping>
         </dynamics>
       </axis>
     </joint>
